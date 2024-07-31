@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"a4609554-d4eb-4a52-9840-c506671fc7ab",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tonyt.testui</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-07-31 06:13:59 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>try to login to github with random user name and password</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>do a google search</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tonyt/testui.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">browser automation 1</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GithubLogin</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">try to login to github with random user name and password</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>67781</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, showDriverLog: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://github.com/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">67764</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">18:12:51.520 preferred port 9222 not available, will use: 57506
+18:13:59.250 request:
+1 &gt; GET http://localhost:57506/json
+1 &gt; Host: localhost:57506
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:59.252 org.apache.http.conn.HttpHostConnectException: Connect to localhost:57506 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused, http call failed after 4 milliseconds for url: http://localhost:57506/json
+18:13:59.256 driver config / start failed: http call failed after 4 milliseconds for url: http://localhost:57506/json
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:57506 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused, options: {type=chrome, showDriverLog=true, target=null}
+18:13:59.257 classpath:tonyt/testui.feature:15
+Given driver &#39;https://github.com/login&#39;
+driver config / start failed: http call failed after 4 milliseconds for url: http://localhost:57506/json
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:57506 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused, options: {type=chrome, showDriverLog=true, target=null}
+classpath:tonyt/testui.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>input(&#39;#login_field&#39;, &#39;dummy&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>input(&#39;#password&#39;, &#39;world&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>submit().click(&quot;input[name=commit]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match html(&#39;.flash-error&#39;) contains &#39;Incorrect username or password.&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GoogleSearch</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">do a google search</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4855</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, showDriverLog: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://google.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1905</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">18:12:52.304 request:
+1 &gt; GET http://localhost:9222/json
+1 &gt; Host: localhost:9222
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:12:52.309 response time in milliseconds: 5
+1 &lt; 200
+1 &lt; Content-Security-Policy: frame-ancestors &#39;none&#39;
+1 &lt; Content-Length: 1242
+1 &lt; Content-Type: application/json; charset=UTF-8
+[ {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/A4D35B646542B354E8FB637C823EA95D&quot;,
+   &quot;id&quot;: &quot;A4D35B646542B354E8FB637C823EA95D&quot;,
+   &quot;title&quot;: &quot;Google Network Speech&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/A4D35B646542B354E8FB637C823EA95D&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/BE678122702547C6FADC7629419A479C&quot;,
+   &quot;id&quot;: &quot;BE678122702547C6FADC7629419A479C&quot;,
+   &quot;title&quot;: &quot;Google Hangouts&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/BE678122702547C6FADC7629419A479C&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/C24422DFAF3E8362AD649B0A43591694&quot;,
+   &quot;id&quot;: &quot;C24422DFAF3E8362AD649B0A43591694&quot;,
+   &quot;title&quot;: &quot;New Tab&quot;,
+   &quot;type&quot;: &quot;page&quot;,
+   &quot;url&quot;: &quot;chrome://newtab/&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/C24422DFAF3E8362AD649B0A43591694&quot;
+} ]
+
+
+18:12:52.317 root frame id: C24422DFAF3E8362AD649B0A43591694
+18:12:52.566 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.attachToTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;flatten&quot;:true}}
+18:12:52.576 &lt;&lt; {&quot;method&quot;:&quot;Target.attachedToTarget&quot;,&quot;params&quot;:{&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;New Tab&quot;,&quot;url&quot;:&quot;chrome://newtab/&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;},&quot;waitingForDebugger&quot;:false}}
+18:12:52.576 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}}
+18:12:52.577 &gt;&gt; {&quot;id&quot;:2,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}
+18:12:52.580 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.580 &gt;&gt; {&quot;id&quot;:3,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Target.setDiscoverTargets&quot;,&quot;params&quot;:{&quot;discover&quot;:true}}
+18:12:52.582 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;A4D35B646542B354E8FB637C823EA95D&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;title&quot;:&quot;Google Network Speech&quot;,&quot;url&quot;:&quot;chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.582 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;BE678122702547C6FADC7629419A479C&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;url&quot;:&quot;chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.583 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;New Tab&quot;,&quot;url&quot;:&quot;chrome://newtab/&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.583 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.584 &gt;&gt; {&quot;id&quot;:4,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Page.enable&quot;}
+18:12:52.585 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.585 &gt;&gt; {&quot;id&quot;:5,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Runtime.enable&quot;}
+18:12:52.586 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:3,&quot;origin&quot;:&quot;chrome://new-tab-page&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-8907180092374289907.4438712322157898352&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;}}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.587 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:2,&quot;origin&quot;:&quot;chrome://new-tab-page&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-1146581644805720861.-7508313733848497745&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;CD412DAE74C052298E7BC1A04A82BCC1&quot;}}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.587 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://new-tab-page&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;8738187441190594872.918397409201440990&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.587 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.588 &gt;&gt; {&quot;id&quot;:6,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}
+18:12:52.589 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;windowId&quot;:980750742,&quot;bounds&quot;:{&quot;left&quot;:22,&quot;top&quot;:47,&quot;width&quot;:1200,&quot;height&quot;:831,&quot;windowState&quot;:&quot;normal&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.651 &gt;&gt; {&quot;id&quot;:7,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/google.com&quot;}}
+18:12:52.658 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;2D36A6E598B501D4C4F08CC4EE31A4D7&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;New Tab&quot;,&quot;url&quot;:&quot;chrome://newtab/&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.675 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.716 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;2D36A6E598B501D4C4F08CC4EE31A4D7&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;New Tab&quot;,&quot;url&quot;:&quot;chrome://newtab/&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.766 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;,&quot;type&quot;:&quot;iframe&quot;,&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.767 &lt;&lt; {&quot;method&quot;:&quot;Target.targetCreated&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;09A70869AAAB3B3F8477C8A3FE2EEAB9&quot;,&quot;type&quot;:&quot;iframe&quot;,&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.767 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;,&quot;type&quot;:&quot;iframe&quot;,&quot;title&quot;:&quot;chrome-untrusted://new-tab-page/one-google-bar?paramsencoded=&quot;,&quot;url&quot;:&quot;chrome-untrusted://new-tab-page/one-google-bar?paramsencoded=&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.769 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;09A70869AAAB3B3F8477C8A3FE2EEAB9&quot;,&quot;type&quot;:&quot;iframe&quot;,&quot;title&quot;:&quot;chrome-untrusted://new-tab-page/one-google-bar?paramsencoded=&quot;,&quot;url&quot;:&quot;chrome-untrusted://new-tab-page/one-google-bar?paramsencoded=&quot;,&quot;attached&quot;:false,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.771 &lt;&lt; {&quot;method&quot;:&quot;Page.frameDetached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;,&quot;reason&quot;:&quot;swap&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:52.771 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextDestroyed&quot;,&quot;params&quot;:{&quot;executionContextId&quot;:3,&quot;executionContextUniqueId&quot;:&quot;-8907180092374289907.4438712322157898352&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.075 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;loaderId&quot;:&quot;8B8AFB0585E1D3F057E889C1C533723B&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.078 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.080 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;google.com&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.080 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.080 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;loaderId&quot;:&quot;8B8AFB0585E1D3F057E889C1C533723B&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;domainAndRegistry&quot;:&quot;google.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.google.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.081 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.google.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-5692391801167330600.4123420905594888940&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.082 &lt;&lt; {&quot;method&quot;:&quot;Page.frameDetached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;,&quot;reason&quot;:&quot;remove&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.082 &lt;&lt; {&quot;method&quot;:&quot;Target.targetDestroyed&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;EA47A0316BB371F2DA502F4163A7A35E&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.390 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;Google&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.396 &lt;&lt; {&quot;method&quot;:&quot;Page.navigatedWithinDocument&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.396 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:13057.885756},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&quot;textarea[name=q]&quot;, &#39;karate dsl&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">18:12:53.403 &gt;&gt; {&quot;id&quot;:8,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;var e = document.querySelector(\&quot;textarea[name=q]\&quot;); e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}&quot;,&quot;returnByValue&quot;:true}}
+18:12:53.426 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;value&quot;:0,&quot;description&quot;:&quot;0&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.439 &gt;&gt; {&quot;id&quot;:9,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;k&quot;,&quot;windowsVirtualKeyCode&quot;:107}}
+18:12:53.442 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.442 &gt;&gt; {&quot;id&quot;:10,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;k&quot;,&quot;windowsVirtualKeyCode&quot;:107}}
+18:12:53.448 &lt;&lt; {&quot;id&quot;:10,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.453 &gt;&gt; {&quot;id&quot;:11,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;k&quot;,&quot;windowsVirtualKeyCode&quot;:107}}
+18:12:53.461 &lt;&lt; {&quot;id&quot;:11,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.462 &gt;&gt; {&quot;id&quot;:12,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.475 &lt;&lt; {&quot;id&quot;:12,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.475 &gt;&gt; {&quot;id&quot;:13,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.477 &lt;&lt; {&quot;id&quot;:13,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.477 &gt;&gt; {&quot;id&quot;:14,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.478 &lt;&lt; {&quot;id&quot;:14,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.479 &gt;&gt; {&quot;id&quot;:15,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:114}}
+18:12:53.481 &lt;&lt; {&quot;id&quot;:15,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.481 &gt;&gt; {&quot;id&quot;:16,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:114}}
+18:12:53.483 &lt;&lt; {&quot;id&quot;:16,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.484 &gt;&gt; {&quot;id&quot;:17,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:114}}
+18:12:53.484 &lt;&lt; {&quot;id&quot;:17,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.485 &gt;&gt; {&quot;id&quot;:18,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.486 &lt;&lt; {&quot;id&quot;:18,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.486 &gt;&gt; {&quot;id&quot;:19,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.492 &lt;&lt; {&quot;id&quot;:19,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.493 &gt;&gt; {&quot;id&quot;:20,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;a&quot;,&quot;windowsVirtualKeyCode&quot;:97}}
+18:12:53.503 &lt;&lt; {&quot;id&quot;:20,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.507 &gt;&gt; {&quot;id&quot;:21,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:116}}
+18:12:53.527 &lt;&lt; {&quot;id&quot;:21,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.528 &gt;&gt; {&quot;id&quot;:22,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:116}}
+18:12:53.530 &lt;&lt; {&quot;id&quot;:22,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.531 &gt;&gt; {&quot;id&quot;:23,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:116}}
+18:12:53.533 &lt;&lt; {&quot;id&quot;:23,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.533 &gt;&gt; {&quot;id&quot;:24,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:101}}
+18:12:53.534 &lt;&lt; {&quot;id&quot;:24,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.536 &gt;&gt; {&quot;id&quot;:25,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:101}}
+18:12:53.542 &lt;&lt; {&quot;id&quot;:25,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.543 &gt;&gt; {&quot;id&quot;:26,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:101}}
+18:12:53.543 &lt;&lt; {&quot;id&quot;:26,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.544 &gt;&gt; {&quot;id&quot;:27,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot; &quot;,&quot;windowsVirtualKeyCode&quot;:32}}
+18:12:53.545 &lt;&lt; {&quot;id&quot;:27,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.545 &gt;&gt; {&quot;id&quot;:28,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot; &quot;,&quot;windowsVirtualKeyCode&quot;:32}}
+18:12:53.548 &lt;&lt; {&quot;id&quot;:28,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.548 &gt;&gt; {&quot;id&quot;:29,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot; &quot;,&quot;windowsVirtualKeyCode&quot;:32}}
+18:12:53.549 &lt;&lt; {&quot;id&quot;:29,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.549 &gt;&gt; {&quot;id&quot;:30,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;d&quot;,&quot;windowsVirtualKeyCode&quot;:100}}
+18:12:53.550 &lt;&lt; {&quot;id&quot;:30,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.550 &gt;&gt; {&quot;id&quot;:31,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;d&quot;,&quot;windowsVirtualKeyCode&quot;:100}}
+18:12:53.553 &lt;&lt; {&quot;id&quot;:31,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.553 &gt;&gt; {&quot;id&quot;:32,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;d&quot;,&quot;windowsVirtualKeyCode&quot;:100}}
+18:12:53.554 &lt;&lt; {&quot;id&quot;:32,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.554 &gt;&gt; {&quot;id&quot;:33,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:115}}
+18:12:53.556 &lt;&lt; {&quot;id&quot;:33,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.556 &gt;&gt; {&quot;id&quot;:34,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:115}}
+18:12:53.559 &lt;&lt; {&quot;id&quot;:34,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.559 &gt;&gt; {&quot;id&quot;:35,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:115}}
+18:12:53.560 &lt;&lt; {&quot;id&quot;:35,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.561 &gt;&gt; {&quot;id&quot;:36,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;l&quot;,&quot;windowsVirtualKeyCode&quot;:108}}
+18:12:53.562 &lt;&lt; {&quot;id&quot;:36,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.562 &gt;&gt; {&quot;id&quot;:37,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;l&quot;,&quot;windowsVirtualKeyCode&quot;:108}}
+18:12:53.566 &lt;&lt; {&quot;id&quot;:37,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.567 &gt;&gt; {&quot;id&quot;:38,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;l&quot;,&quot;windowsVirtualKeyCode&quot;:108}}
+18:12:53.596 &lt;&lt; {&quot;id&quot;:38,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.606 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:13058.094545},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.609 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>submit().click(&quot;input[name=btnI]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2677</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">18:12:53.613 &gt;&gt; {&quot;id&quot;:39,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.querySelector(\&quot;input[name=btnI]\&quot;).click()&quot;,&quot;returnByValue&quot;:true}}
+18:12:53.617 &lt;&lt; {&quot;id&quot;:39,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;undefined&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.618 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;formSubmissionGet&quot;,&quot;url&quot;:&quot;https://www.google.com/search?q=karate+dsl&amp;btnI=I%27m+Feeling+Lucky&amp;sca_esv=84dc886b0fa71fd4&amp;sca_upv=1&amp;source=hp&amp;ei=BPKpZpCBO_-useMPvcHi4Qo&amp;iflsig=AL9hbdgAAAAAZqoAFGrFHwf17KAEn7SF6RpG4c1an2bE&amp;ved=0ahUKEwiQk7HJ6tCHAxV_V2wGHb2gOKwQ19QECBE&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.618 &lt;&lt; {&quot;method&quot;:&quot;Page.frameRequestedNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;reason&quot;:&quot;formSubmissionGet&quot;,&quot;url&quot;:&quot;https://www.google.com/search?q=karate+dsl&amp;btnI=I%27m+Feeling+Lucky&amp;sca_esv=84dc886b0fa71fd4&amp;sca_upv=1&amp;source=hp&amp;ei=BPKpZpCBO_-useMPvcHi4Qo&amp;iflsig=AL9hbdgAAAAAZqoAFGrFHwf17KAEn7SF6RpG4c1an2bE&amp;ved=0ahUKEwiQk7HJ6tCHAxV_V2wGHb2gOKwQ19QECBE&quot;,&quot;disposition&quot;:&quot;currentTab&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.627 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:53.627 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.562 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.563 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;github.com/karatelabs/karate&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.564 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.565 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;loaderId&quot;:&quot;AFECFADFF6C26556745E1788B3FB1CAB&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;,&quot;domainAndRegistry&quot;:&quot;github.com&quot;,&quot;securityOrigin&quot;:&quot;https://github.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.565 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://github.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;2710467427263075150.3121287798976305474&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:55.944 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;GitHub - karatelabs/karate: Test Automation Made Simple&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:56.077 &lt;&lt; {&quot;method&quot;:&quot;Page.navigatedWithinDocument&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:56.288 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:13060.718181},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:56.288 &lt;&lt; {&quot;method&quot;:&quot;Target.targetInfoChanged&quot;,&quot;params&quot;:{&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;GitHub - karatelabs/karate: Test Automation Made Simple&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;442BDADAD5DF7C58A28251FE494C8333&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:56.288 &lt;&lt; {&quot;method&quot;:&quot;Page.navigatedWithinDocument&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;,&quot;url&quot;:&quot;https://github.com/karatelabs/karate&quot;},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>waitForUrl(&#39;https://github.com/karatelabs/karate&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">18:12:56.290 &gt;&gt; {&quot;id&quot;:40,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.location.href&quot;,&quot;returnByValue&quot;:true}}
+18:12:56.329 &lt;&lt; {&quot;id&quot;:40,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;https://github.com/karatelabs/karate&quot;}},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+18:12:56.330 &gt;&gt; {&quot;id&quot;:41,&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;C24422DFAF3E8362AD649B0A43591694&quot;}}
+18:12:56.330 &lt;&lt; {&quot;id&quot;:41,&quot;result&quot;:{&quot;success&quot;:true},&quot;sessionId&quot;:&quot;0FC8EFC95952DB2A998E4BFFB2A56D75&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
