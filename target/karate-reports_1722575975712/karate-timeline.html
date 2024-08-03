@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tonyt\/petstore[2.1:34]","start":1722575934263,"end":1722575935673,"title":"src\/test\/java\/tonyt\/petstore[2.1:34] 15:18:54.263-15:18:55.673 PUT \/pet","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/tonyt\/petstore[2.2:35]","start":1722575935679,"end":1722575936368,"title":"src\/test\/java\/tonyt\/petstore[2.2:35] 15:18:55.679-15:18:56.368 PUT \/pet","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/tonyt\/petstore[2.3:36]","start":1722575936371,"end":1722575937185,"title":"src\/test\/java\/tonyt\/petstore[2.3:36] 15:18:56.371-15:18:57.185 PUT \/pet","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/tonyt\/petstore[2.4:37]","start":1722575937189,"end":1722575937869,"title":"src\/test\/java\/tonyt\/petstore[2.4:37] 15:18:57.189-15:18:57.869 PUT \/pet","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

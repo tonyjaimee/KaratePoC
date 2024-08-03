@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"a4609554-d4eb-4a52-9840-c506671fc7ab",karate_version:"1.4.1",karate_meta:"vscode:2.0.5"});
+  }
+});
+</script>
+
+    <title>src.test.java.tonyt.petstore</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-04 12:14:27 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:23]"><span>[1.1:23]</span> <span>[PUT /pet] Data Validation</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:24]"><span>[1.2:24]</span> <span>[PUT /pet] Data Validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:25]"><span>[1.3:25]</span> <span>[PUT /pet] Data Validation</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:43]"><span>[2.1:43]</span> <span>[PUT /pet] Schema validation</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:44]"><span>[2.2:44]</span> <span>[PUT /pet] Schema validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.3:45]"><span>[2.3:45]</span> <span>[PUT /pet] Schema validation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tonyt/petstore.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Petstore API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetData</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:23]</span>
+                <span class="scenario-name">[PUT /pet] Data Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1667</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:23]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">00:14:22.671 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">00:14:22.695 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_1_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1627</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">00:14:22.859 request:
+1 &gt; PUT https://petstore3.swagger.io/api/v3/pet
+1 &gt; Authorization: Bearer 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 133
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+00:14:24.342 response time in milliseconds: 1480
+1 &lt; 200
+1 &lt; Date: Sat, 03 Aug 2024 14:14:24 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 133
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:tonyt/putpet_1_output.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetData</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:24]</span>
+                <span class="scenario-name">[PUT /pet] Data Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>806</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:24]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">00:14:24.361 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">00:14:24.363 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_2_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">799</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.17">00:14:24.365 request:
+1 &gt; PUT https://petstore3.swagger.io/api/v3/pet
+1 &gt; Authorization: Bearer 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 143
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;Updated Kitty&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+00:14:25.163 response time in milliseconds: 797
+1 &lt; 200
+1 &lt; Date: Sat, 03 Aug 2024 14:14:24 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 143
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;Updated Kitty&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:tonyt/putpet_2_output.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetData</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:25]</span>
+                <span class="scenario-name">[PUT /pet] Data Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>678</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:25]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">00:14:25.173 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7">00:14:25.175 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_999_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">668</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.17">00:14:25.178 request:
+1 &gt; PUT https://petstore3.swagger.io/api/v3/pet
+1 &gt; Authorization: Bearer 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 135
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:999,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+00:14:25.844 response time in milliseconds: 665
+1 &lt; 200
+1 &lt; Date: Sat, 03 Aug 2024 14:14:25 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 135
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;id&quot;:999,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.18">00:14:25.854 src/test/java/tonyt/petstore.feature:18
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 665, url: https://petstore3.swagger.io/api/v3/pet, response: 
+{&quot;id&quot;:999,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+src/test/java/tonyt/petstore.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:tonyt/putpet_999_output.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:43]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:43]</span>
+                <span class="scenario-name">[PUT /pet] Schema validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1247</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:43]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:43]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">00:14:25.861 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">00:14:25.863 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_nopayload_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1245</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.37">00:14:25.866 request:
+1 &gt; PUT https://petstore3.swagger.io/api/v3/pet
+1 &gt; Authorization: Bearer 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1
+1 &gt; Content-Type: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:14:27.105 response time in milliseconds: 1236
+1 &lt; 400
+1 &lt; Date: Sat, 03 Aug 2024 14:14:26 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;code&quot;:400,&quot;message&quot;:&quot;Input error: The input body `class RequestBody {\n    description: Update an existent pet in the store\n    content: class Content {\n        {application/json=class MediaType {\n            schema: class ObjectSchema {\n                class Schema {\n                    type: object\n                    format: null\n                    $ref: null\n                    description: null\n                    title: null\n                    multipleOf: null\n                    maximum: null\n                    exclusiveMaximum: null\n                    minimum: null\n                    exclusiveMinimum: null\n                    maxLength: null\n                    minLength: null\n                    pattern: null\n                    maxItems: null\n                    minItems: null\n                    uniqueItems: null\n                    maxProperties: null\n                    minProperties: null\n                    required: [name, photoUrls]\n                    not: null\n                    properties: {id=class IntegerSchema {\n                        class Schema {\n                            type: integer\n                            format: int64\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: 10\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, name=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: doggie\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, category=class ObjectSchema {\n                        class Schema {\n                            type: object\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: {id=class IntegerSchema {\n                                class Schema {\n                                    type: integer\n                                    format: int64\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: 1\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }, name=class StringSchema {\n                                class Schema {\n                                    type: string\n                                    format: null\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: Dogs\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }}\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: category\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: null\n                            }\n                        }\n                    }, photoUrls=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, tags=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, status=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: pet status in the store\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }}\n                    additionalProperties: null\n                    nullable: null\n                    readOnly: null\n                    writeOnly: null\n                    example: null\n                    externalDocs: null\n                    deprecated: null\n                    discriminator: null\n                    xml: class XML {\n                        name: pet\n                        namespace: null\n                        prefix: null\n                        attribute: null\n                        wrapped: null\n                    }\n                }\n            }\n            examples: null\n            example: null\n            encoding: null\n        }, application/xml=class MediaType {\n            schema: class ObjectSchema {\n                class Schema {\n                    type: object\n                    format: null\n                    $ref: null\n                    description: null\n                    title: null\n                    multipleOf: null\n                    maximum: null\n                    exclusiveMaximum: null\n                    minimum: null\n                    exclusiveMinimum: null\n                    maxLength: null\n                    minLength: null\n                    pattern: null\n                    maxItems: null\n                    minItems: null\n                    uniqueItems: null\n                    maxProperties: null\n                    minProperties: null\n                    required: [name, photoUrls]\n                    not: null\n                    properties: {id=class IntegerSchema {\n                        class Schema {\n                            type: integer\n                            format: int64\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: 10\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, name=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: doggie\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, category=class ObjectSchema {\n                        class Schema {\n                            type: object\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: {id=class IntegerSchema {\n                                class Schema {\n                                    type: integer\n                                    format: int64\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: 1\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }, name=class StringSchema {\n                                class Schema {\n                                    type: string\n                                    format: null\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: Dogs\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }}\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: category\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: null\n                            }\n                        }\n                    }, photoUrls=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, tags=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, status=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: pet status in the store\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }}\n                    additionalProperties: null\n                    nullable: null\n                    readOnly: null\n                    writeOnly: null\n                    example: null\n                    externalDocs: null\n                    deprecated: null\n                    discriminator: null\n                    xml: class XML {\n                        name: pet\n                        namespace: null\n                        prefix: null\n                        attribute: null\n                        wrapped: null\n                    }\n                }\n            }\n            examples: null\n            example: null\n            encoding: null\n        }, application/x-www-form-urlencoded=class MediaType {\n            schema: class ObjectSchema {\n                class Schema {\n                    type: object\n                    format: null\n                    $ref: null\n                    description: null\n                    title: null\n                    multipleOf: null\n                    maximum: null\n                    exclusiveMaximum: null\n                    minimum: null\n                    exclusiveMinimum: null\n                    maxLength: null\n                    minLength: null\n                    pattern: null\n                    maxItems: null\n                    minItems: null\n                    uniqueItems: null\n                    maxProperties: null\n                    minProperties: null\n                    required: [name, photoUrls]\n                    not: null\n                    properties: {id=class IntegerSchema {\n                        class Schema {\n                            type: integer\n                            format: int64\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: 10\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, name=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: doggie\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }, category=class ObjectSchema {\n                        class Schema {\n                            type: object\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: {id=class IntegerSchema {\n                                class Schema {\n                                    type: integer\n                                    format: int64\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: 1\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }, name=class StringSchema {\n                                class Schema {\n                                    type: string\n                                    format: null\n                                    $ref: null\n                                    description: null\n                                    title: null\n                                    multipleOf: null\n                                    maximum: null\n                                    exclusiveMaximum: null\n                                    minimum: null\n                                    exclusiveMinimum: null\n                                    maxLength: null\n                                    minLength: null\n                                    pattern: null\n                                    maxItems: null\n                                    minItems: null\n                                    uniqueItems: null\n                                    maxProperties: null\n                                    minProperties: null\n                                    required: null\n                                    not: null\n                                    properties: null\n                                    additionalProperties: null\n                                    nullable: null\n                                    readOnly: null\n                                    writeOnly: null\n                                    example: Dogs\n                                    externalDocs: null\n                                    deprecated: null\n                                    discriminator: null\n                                    xml: null\n                                }\n                            }}\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: category\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: null\n                            }\n                        }\n                    }, photoUrls=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, tags=class ArraySchema {\n                        class Schema {\n                            type: array\n                            format: null\n                            $ref: null\n                            description: null\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: class XML {\n                                name: null\n                                namespace: null\n                                prefix: null\n                                attribute: null\n                                wrapped: true\n                            }\n                        }\n                    }, status=class StringSchema {\n                        class Schema {\n                            type: string\n                            format: null\n                            $ref: null\n                            description: pet status in the store\n                            title: null\n                            multipleOf: null\n                            maximum: null\n                            exclusiveMaximum: null\n                            minimum: null\n                            exclusiveMinimum: null\n                            maxLength: null\n                            minLength: null\n                            pattern: null\n                            maxItems: null\n                            minItems: null\n                            uniqueItems: null\n                            maxProperties: null\n                            minProperties: null\n                            required: null\n                            not: null\n                            properties: null\n                            additionalProperties: null\n                            nullable: null\n                            readOnly: null\n                            writeOnly: null\n                            example: null\n                            externalDocs: null\n                            deprecated: null\n                            discriminator: null\n                            xml: null\n                        }\n                    }}\n                    additionalProperties: null\n                    nullable: null\n                    readOnly: null\n                    writeOnly: null\n                    example: null\n                    externalDocs: null\n                    deprecated: null\n                    discriminator: null\n                    xml: class XML {\n                        name: pet\n                        namespace: null\n                        prefix: null\n                        attribute: null\n                        wrapped: null\n                    }\n                }\n            }\n            examples: null\n            example: null\n            encoding: null\n        }}\n    }\n    required: true\n}` is required&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains {code: 400}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:44]</span>
+                <span class="scenario-name">[PUT /pet] Schema validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>705</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:44]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">00:14:27.113 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">00:14:27.115 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_wrongschema_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">702</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.37">00:14:27.118 request:
+1 &gt; PUT https://petstore3.swagger.io/api/v3/pet
+1 &gt; Authorization: Bearer 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 138
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;heyyo&quot;:999,&quot;name&quot;:&quot;Dogs&quot;,&quot;photoUrls&quot;:[&quot;sunt ullamco dolor&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+00:14:27.818 response time in milliseconds: 699
+1 &lt; 500
+1 &lt; Date: Sat, 03 Aug 2024 14:14:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 110
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;code&quot;:500,&quot;message&quot;:&quot;There was an error processing your request. It has been logged (ID: 66dcd56e6b4cd7cb)&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains {code: 500}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:45]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">PutPetSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:45]</span>
+                <span class="scenario-name">[PUT /pet] Schema validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>15</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:45]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:45]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">00:14:27.825 Given:  null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7">00:14:27.827 [print] 1283c7a2b9f39fcd6aac40bbae5b38db2f6c8e3743c4c9ce73f0e3e0ffd1e9e1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And header api_key = &#39;1111&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And configure ssl = true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.35">
+      <div class="step-ref failed">35</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request data = read(&#39;classpath:tonyt/putpet_missingid_input.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.35">00:14:27.841 src/test/java/tonyt/petstore.feature:35
+And request data = read(&#39;classpath:tonyt/putpet_missingid_input.json&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: data = read(&#39;classpath:tonyt/putpet_missingid_input.json&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: tonyt/putpet_missingid_input.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/tonyt/petstore.feature:35
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 500</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains {code: 500}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

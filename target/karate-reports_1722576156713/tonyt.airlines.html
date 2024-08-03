@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"a4609554-d4eb-4a52-9840-c506671fc7ab",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tonyt.airlines</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-02 03:22:36 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>GET /airline/{airlineId}</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>GET /airlines?sort=name&amp;order=dec</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tonyt/airlines.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Airlines API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GetAirlineById</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">GET /airline/{airlineId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>800</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl = &quot;https://freetestapi.com/api/v1/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">46</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def airlineId = 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def jsonBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{&quot;id&quot;:1,&quot;name&quot;:&quot;Lufthansa&quot;,&quot;code&quot;:&quot;LH&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;founded&quot;:&quot;1953&quot;,&quot;fleet_size&quot;:&quot;300+&quot;,&quot;headquarters&quot;:&quot;Cologne, Germany&quot;,&quot;website&quot;:&quot;https://www.lufthansa.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airlines&#39;, airlineId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># The above will generate GET /airline/1</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">710</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">15:22:35.547 request:
+1 &gt; GET https://freetestapi.com/api/v1/airlines/1
+1 &gt; Content-Type: application/json
+1 &gt; Host: freetestapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:22:36.145 response time in milliseconds: 597
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: public, max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 02 Aug 2024 05:22:36 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+1 &lt; X-Matched-Path: /api/v1/airlines/[id]
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Execution-Region: iad1
+1 &lt; X-Vercel-Id: syd1::iad1::5h6s5-1722576155830-9abfce2e8b30
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Lufthansa&quot;,&quot;code&quot;:&quot;LH&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;founded&quot;:&quot;1953&quot;,&quot;fleet_size&quot;:&quot;300+&quot;,&quot;headquarters&quot;:&quot;Cologne, Germany&quot;,&quot;website&quot;:&quot;https://www.lufthansa.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == jsonBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GetAllAirlines</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">GET /airlines?sort=name&amp;order=dec</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>827</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl = &quot;https://freetestapi.com/api/v1/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">46</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airlines&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param sort = &#39;name&amp;order=dec&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># This param variable named &quot;sort&quot; will be appended towards the end of UR after ? =&gt; GET /airlines?sort=name&amp;order=dec</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">779</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">15:22:35.547 request:
+1 &gt; GET https://freetestapi.com/api/v1/airlines?sort=name%26order%3Ddec
+1 &gt; Content-Type: application/json
+1 &gt; Host: freetestapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:22:36.172 response time in milliseconds: 625
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: public, max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 02 Aug 2024 05:22:36 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+1 &lt; X-Matched-Path: /api/v1/airlines
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Execution-Region: iad1
+1 &lt; X-Vercel-Id: syd1::iad1::m62hp-1722576155851-45cda5a98662
+1 &lt; Transfer-Encoding: chunked
+[{&quot;id&quot;:9,&quot;name&quot;:&quot;Turkish Airlines&quot;,&quot;code&quot;:&quot;TK&quot;,&quot;country&quot;:&quot;Turkey&quot;,&quot;founded&quot;:&quot;1933&quot;,&quot;fleet_size&quot;:&quot;350+&quot;,&quot;headquarters&quot;:&quot;Istanbul, Turkey&quot;,&quot;website&quot;:&quot;https://www.turkishairlines.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Istanbul&quot;,&quot;code&quot;:&quot;IST&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:43,&quot;name&quot;:&quot;Swiss International Air Lines&quot;,&quot;code&quot;:&quot;LX&quot;,&quot;country&quot;:&quot;Switzerland&quot;,&quot;founded&quot;:&quot;2002&quot;,&quot;fleet_size&quot;:&quot;90+&quot;,&quot;headquarters&quot;:&quot;Zurich, Switzerland&quot;,&quot;website&quot;:&quot;https://www.swiss.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Zurich&quot;,&quot;code&quot;:&quot;ZRH&quot;},{&quot;name&quot;:&quot;Geneva&quot;,&quot;code&quot;:&quot;GVA&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:21,&quot;name&quot;:&quot;South African Airways&quot;,&quot;code&quot;:&quot;SA&quot;,&quot;country&quot;:&quot;South Africa&quot;,&quot;founded&quot;:&quot;1934&quot;,&quot;fleet_size&quot;:&quot;40+&quot;,&quot;headquarters&quot;:&quot;Johannesburg, South Africa&quot;,&quot;website&quot;:&quot;https://www.flysaa.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Johannesburg&quot;,&quot;code&quot;:&quot;JNB&quot;},{&quot;name&quot;:&quot;Cape Town&quot;,&quot;code&quot;:&quot;CPT&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:7,&quot;name&quot;:&quot;Singapore Airlines&quot;,&quot;code&quot;:&quot;SQ&quot;,&quot;country&quot;:&quot;Singapore&quot;,&quot;founded&quot;:&quot;1947&quot;,&quot;fleet_size&quot;:&quot;130+&quot;,&quot;headquarters&quot;:&quot;Singapore&quot;,&quot;website&quot;:&quot;https://www.singaporeair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Singapore&quot;,&quot;code&quot;:&quot;SIN&quot;},{&quot;name&quot;:&quot;Tokyo&quot;,&quot;code&quot;:&quot;NRT&quot;},{&quot;name&quot;:&quot;Sydney&quot;,&quot;code&quot;:&quot;SYD&quot;}]},{&quot;id&quot;:50,&quot;name&quot;:&quot;Sichuan Airlines&quot;,&quot;code&quot;:&quot;3U&quot;,&quot;country&quot;:&quot;China&quot;,&quot;founded&quot;:&quot;1986&quot;,&quot;fleet_size&quot;:&quot;100+&quot;,&quot;headquarters&quot;:&quot;Chengdu, China&quot;,&quot;website&quot;:&quot;https://www.sichuanair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Chengdu&quot;,&quot;code&quot;:&quot;CTU&quot;},{&quot;name&quot;:&quot;Beijing&quot;,&quot;code&quot;:&quot;PEK&quot;},{&quot;name&quot;:&quot;Shanghai&quot;,&quot;code&quot;:&quot;PVG&quot;}]},{&quot;id&quot;:49,&quot;name&quot;:&quot;Saudia&quot;,&quot;code&quot;:&quot;SV&quot;,&quot;country&quot;:&quot;Saudi Arabia&quot;,&quot;founded&quot;:&quot;1945&quot;,&quot;fleet_size&quot;:&quot;150+&quot;,&quot;headquarters&quot;:&quot;Jeddah, Saudi Arabia&quot;,&quot;website&quot;:&quot;https://www.saudia.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Jeddah&quot;,&quot;code&quot;:&quot;JED&quot;},{&quot;name&quot;:&quot;Riyadh&quot;,&quot;code&quot;:&quot;RUH&quot;},{&quot;name&quot;:&quot;Dubai&quot;,&quot;code&quot;:&quot;DXB&quot;}]},{&quot;id&quot;:20,&quot;name&quot;:&quot;SAS Scandinavian Airlines&quot;,&quot;code&quot;:&quot;SK&quot;,&quot;country&quot;:&quot;Sweden&quot;,&quot;founded&quot;:&quot;1946&quot;,&quot;fleet_size&quot;:&quot;150+&quot;,&quot;headquarters&quot;:&quot;Stockholm, Sweden&quot;,&quot;website&quot;:&quot;https://www.flysas.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Stockholm&quot;,&quot;code&quot;:&quot;ARN&quot;},{&quot;name&quot;:&quot;Copenhagen&quot;,&quot;code&quot;:&quot;CPH&quot;},{&quot;name&quot;:&quot;Oslo&quot;,&quot;code&quot;:&quot;OSL&quot;}]},{&quot;id&quot;:35,&quot;name&quot;:&quot;Royal Jordanian&quot;,&quot;code&quot;:&quot;RJ&quot;,&quot;country&quot;:&quot;Jordan&quot;,&quot;founded&quot;:&quot;1963&quot;,&quot;fleet_size&quot;:&quot;25+&quot;,&quot;headquarters&quot;:&quot;Amman, Jordan&quot;,&quot;website&quot;:&quot;https://www.rj.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Amman&quot;,&quot;code&quot;:&quot;AMM&quot;},{&quot;name&quot;:&quot;Cairo&quot;,&quot;code&quot;:&quot;CAI&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:44,&quot;name&quot;:&quot;Royal Brunei Airlines&quot;,&quot;code&quot;:&quot;BI&quot;,&quot;country&quot;:&quot;Brunei&quot;,&quot;founded&quot;:&quot;1974&quot;,&quot;fleet_size&quot;:&quot;15+&quot;,&quot;headquarters&quot;:&quot;Bandar Seri Begawan, Brunei&quot;,&quot;website&quot;:&quot;https://www.flyroyalbrunei.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Bandar Seri Begawan&quot;,&quot;code&quot;:&quot;BWN&quot;},{&quot;name&quot;:&quot;Kuala Lumpur&quot;,&quot;code&quot;:&quot;KUL&quot;},{&quot;name&quot;:&quot;Singapore&quot;,&quot;code&quot;:&quot;SIN&quot;}]},{&quot;id&quot;:38,&quot;name&quot;:&quot;Royal Air Maroc&quot;,&quot;code&quot;:&quot;AT&quot;,&quot;country&quot;:&quot;Morocco&quot;,&quot;founded&quot;:&quot;1957&quot;,&quot;fleet_size&quot;:&quot;60+&quot;,&quot;headquarters&quot;:&quot;Casablanca, Morocco&quot;,&quot;website&quot;:&quot;https://www.royalairmaroc.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Casablanca&quot;,&quot;code&quot;:&quot;CMN&quot;},{&quot;name&quot;:&quot;Marrakech&quot;,&quot;code&quot;:&quot;RAK&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]},{&quot;id&quot;:6,&quot;name&quot;:&quot;Qatar Airways&quot;,&quot;code&quot;:&quot;QR&quot;,&quot;country&quot;:&quot;Qatar&quot;,&quot;founded&quot;:&quot;1993&quot;,&quot;fleet_size&quot;:&quot;250+&quot;,&quot;headquarters&quot;:&quot;Doha, Qatar&quot;,&quot;website&quot;:&quot;https://www.qatarairways.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Doha&quot;,&quot;code&quot;:&quot;DOH&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:13,&quot;name&quot;:&quot;Qantas&quot;,&quot;code&quot;:&quot;QF&quot;,&quot;country&quot;:&quot;Australia&quot;,&quot;founded&quot;:&quot;1920&quot;,&quot;fleet_size&quot;:&quot;130+&quot;,&quot;headquarters&quot;:&quot;Sydney, Australia&quot;,&quot;website&quot;:&quot;https://www.qantas.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Sydney&quot;,&quot;code&quot;:&quot;SYD&quot;},{&quot;name&quot;:&quot;Melbourne&quot;,&quot;code&quot;:&quot;MEL&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;}]},{&quot;id&quot;:45,&quot;name&quot;:&quot;Oman Air&quot;,&quot;code&quot;:&quot;WY&quot;,&quot;country&quot;:&quot;Oman&quot;,&quot;founded&quot;:&quot;1993&quot;,&quot;fleet_size&quot;:&quot;50+&quot;,&quot;headquarters&quot;:&quot;Muscat, Oman&quot;,&quot;website&quot;:&quot;https://www.omanair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Muscat&quot;,&quot;code&quot;:&quot;MCT&quot;},{&quot;name&quot;:&quot;Dubai&quot;,&quot;code&quot;:&quot;DXB&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:26,&quot;name&quot;:&quot;Norwegian Air Shuttle&quot;,&quot;code&quot;:&quot;DY&quot;,&quot;country&quot;:&quot;Norway&quot;,&quot;founded&quot;:&quot;1993&quot;,&quot;fleet_size&quot;:&quot;160+&quot;,&quot;headquarters&quot;:&quot;Oslo, Norway&quot;,&quot;website&quot;:&quot;https://www.norwegian.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Oslo&quot;,&quot;code&quot;:&quot;OSL&quot;},{&quot;name&quot;:&quot;Copenhagen&quot;,&quot;code&quot;:&quot;CPH&quot;},{&quot;name&quot;:&quot;Stockholm&quot;,&quot;code&quot;:&quot;ARN&quot;}]},{&quot;id&quot;:1,&quot;name&quot;:&quot;Lufthansa&quot;,&quot;code&quot;:&quot;LH&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;founded&quot;:&quot;1953&quot;,&quot;fleet_size&quot;:&quot;300+&quot;,&quot;headquarters&quot;:&quot;Cologne, Germany&quot;,&quot;website&quot;:&quot;https://www.lufthansa.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]},{&quot;id&quot;:41,&quot;name&quot;:&quot;LATAM Airlines&quot;,&quot;code&quot;:&quot;LA&quot;,&quot;country&quot;:&quot;Chile&quot;,&quot;founded&quot;:&quot;2012&quot;,&quot;fleet_size&quot;:&quot;140+&quot;,&quot;headquarters&quot;:&quot;Santiago, Chile&quot;,&quot;website&quot;:&quot;https://www.latam.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Santiago&quot;,&quot;code&quot;:&quot;SCL&quot;},{&quot;name&quot;:&quot;Lima&quot;,&quot;code&quot;:&quot;LIM&quot;},{&quot;name&quot;:&quot;Miami&quot;,&quot;code&quot;:&quot;MIA&quot;}]},{&quot;id&quot;:14,&quot;name&quot;:&quot;KLM Royal Dutch Airlines&quot;,&quot;code&quot;:&quot;KL&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;founded&quot;:&quot;1919&quot;,&quot;fleet_size&quot;:&quot;120+&quot;,&quot;headquarters&quot;:&quot;Amsterdam, Netherlands&quot;,&quot;website&quot;:&quot;https://www.klm.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Amsterdam&quot;,&quot;code&quot;:&quot;AMS&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]},{&quot;id&quot;:27,&quot;name&quot;:&quot;Icelandair&quot;,&quot;code&quot;:&quot;FI&quot;,&quot;country&quot;:&quot;Iceland&quot;,&quot;founded&quot;:&quot;1937&quot;,&quot;fleet_size&quot;:&quot;30+&quot;,&quot;headquarters&quot;:&quot;Reykjavik, Iceland&quot;,&quot;website&quot;:&quot;https://www.icelandair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Reykjavik&quot;,&quot;code&quot;:&quot;KEF&quot;},{&quot;name&quot;:&quot;Copenhagen&quot;,&quot;code&quot;:&quot;CPH&quot;},{&quot;name&quot;:&quot;Amsterdam&quot;,&quot;code&quot;:&quot;AMS&quot;}]},{&quot;id&quot;:37,&quot;name&quot;:&quot;Garuda Indonesia&quot;,&quot;code&quot;:&quot;GA&quot;,&quot;country&quot;:&quot;Indonesia&quot;,&quot;founded&quot;:&quot;1949&quot;,&quot;fleet_size&quot;:&quot;140+&quot;,&quot;headquarters&quot;:&quot;Jakarta, Indonesia&quot;,&quot;website&quot;:&quot;https://www.garuda-indonesia.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Jakarta&quot;,&quot;code&quot;:&quot;CGK&quot;},{&quot;name&quot;:&quot;Bali&quot;,&quot;code&quot;:&quot;DPS&quot;},{&quot;name&quot;:&quot;Singapore&quot;,&quot;code&quot;:&quot;SIN&quot;}]},{&quot;id&quot;:39,&quot;name&quot;:&quot;Finnair&quot;,&quot;code&quot;:&quot;AY&quot;,&quot;country&quot;:&quot;Finland&quot;,&quot;founded&quot;:&quot;1923&quot;,&quot;fleet_size&quot;:&quot;80+&quot;,&quot;headquarters&quot;:&quot;Helsinki, Finland&quot;,&quot;website&quot;:&quot;https://www.finnair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Helsinki&quot;,&quot;code&quot;:&quot;HEL&quot;},{&quot;name&quot;:&quot;Stockholm&quot;,&quot;code&quot;:&quot;ARN&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]},{&quot;id&quot;:48,&quot;name&quot;:&quot;Fiji Airways&quot;,&quot;code&quot;:&quot;FJ&quot;,&quot;country&quot;:&quot;Fiji&quot;,&quot;founded&quot;:&quot;1951&quot;,&quot;fleet_size&quot;:&quot;10+&quot;,&quot;headquarters&quot;:&quot;Nadi, Fiji&quot;,&quot;website&quot;:&quot;https://www.fijiairways.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Nadi&quot;,&quot;code&quot;:&quot;NAN&quot;},{&quot;name&quot;:&quot;Sydney&quot;,&quot;code&quot;:&quot;SYD&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;}]},{&quot;id&quot;:16,&quot;name&quot;:&quot;EVA Air&quot;,&quot;code&quot;:&quot;BR&quot;,&quot;country&quot;:&quot;Taiwan&quot;,&quot;founded&quot;:&quot;1989&quot;,&quot;fleet_size&quot;:&quot;80+&quot;,&quot;headquarters&quot;:&quot;Taipei, Taiwan&quot;,&quot;website&quot;:&quot;https://www.evaair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Taipei&quot;,&quot;code&quot;:&quot;TPE&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;},{&quot;name&quot;:&quot;Tokyo&quot;,&quot;code&quot;:&quot;NRT&quot;}]},{&quot;id&quot;:12,&quot;name&quot;:&quot;Etihad Airways&quot;,&quot;code&quot;:&quot;EY&quot;,&quot;country&quot;:&quot;United Arab Emirates&quot;,&quot;founded&quot;:&quot;2003&quot;,&quot;fleet_size&quot;:&quot;100+&quot;,&quot;headquarters&quot;:&quot;Abu Dhabi, UAE&quot;,&quot;website&quot;:&quot;https://www.etihad.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Abu Dhabi&quot;,&quot;code&quot;:&quot;AUH&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:40,&quot;name&quot;:&quot;Ethiopian Airlines&quot;,&quot;code&quot;:&quot;ET&quot;,&quot;country&quot;:&quot;Ethiopia&quot;,&quot;founded&quot;:&quot;1945&quot;,&quot;fleet_size&quot;:&quot;130+&quot;,&quot;headquarters&quot;:&quot;Addis Ababa, Ethiopia&quot;,&quot;website&quot;:&quot;https://www.ethiopianairlines.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Addis Ababa&quot;,&quot;code&quot;:&quot;ADD&quot;},{&quot;name&quot;:&quot;Nairobi&quot;,&quot;code&quot;:&quot;NBO&quot;},{&quot;name&quot;:&quot;Dubai&quot;,&quot;code&quot;:&quot;DXB&quot;}]},{&quot;id&quot;:31,&quot;name&quot;:&quot;Estonian Air&quot;,&quot;code&quot;:&quot;OV&quot;,&quot;country&quot;:&quot;Estonia&quot;,&quot;founded&quot;:&quot;1991&quot;,&quot;fleet_size&quot;:&quot;5+&quot;,&quot;headquarters&quot;:&quot;Tallinn, Estonia&quot;,&quot;website&quot;:&quot;https://www.estonian-air.ee/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Tallinn&quot;,&quot;code&quot;:&quot;TLL&quot;},{&quot;name&quot;:&quot;Helsinki&quot;,&quot;code&quot;:&quot;HEL&quot;},{&quot;name&quot;:&quot;Stockholm&quot;,&quot;code&quot;:&quot;ARN&quot;}]},{&quot;id&quot;:2,&quot;name&quot;:&quot;Emirates&quot;,&quot;code&quot;:&quot;EK&quot;,&quot;country&quot;:&quot;United Arab Emirates&quot;,&quot;founded&quot;:&quot;1985&quot;,&quot;fleet_size&quot;:&quot;250+&quot;,&quot;headquarters&quot;:&quot;Dubai, UAE&quot;,&quot;website&quot;:&quot;https://www.emirates.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Dubai&quot;,&quot;code&quot;:&quot;DXB&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:23,&quot;name&quot;:&quot;EgyptAir&quot;,&quot;code&quot;:&quot;MS&quot;,&quot;country&quot;:&quot;Egypt&quot;,&quot;founded&quot;:&quot;1932&quot;,&quot;fleet_size&quot;:&quot;60+&quot;,&quot;headquarters&quot;:&quot;Cairo, Egypt&quot;,&quot;website&quot;:&quot;https://www.egyptair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Cairo&quot;,&quot;code&quot;:&quot;CAI&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:10,&quot;name&quot;:&quot;Delta Air Lines&quot;,&quot;code&quot;:&quot;DL&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;founded&quot;:&quot;1924&quot;,&quot;fleet_size&quot;:&quot;800+&quot;,&quot;headquarters&quot;:&quot;Atlanta, Georgia, USA&quot;,&quot;website&quot;:&quot;https://www.delta.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Atlanta&quot;,&quot;code&quot;:&quot;ATL&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:46,&quot;name&quot;:&quot;Czech Airlines&quot;,&quot;code&quot;:&quot;OK&quot;,&quot;country&quot;:&quot;Czech Republic&quot;,&quot;founded&quot;:&quot;1923&quot;,&quot;fleet_size&quot;:&quot;20+&quot;,&quot;headquarters&quot;:&quot;Prague, Czech Republic&quot;,&quot;website&quot;:&quot;https://www.czechairlines.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Prague&quot;,&quot;code&quot;:&quot;PRG&quot;},{&quot;name&quot;:&quot;Vienna&quot;,&quot;code&quot;:&quot;VIE&quot;},{&quot;name&quot;:&quot;Amsterdam&quot;,&quot;code&quot;:&quot;AMS&quot;}]},{&quot;id&quot;:47,&quot;name&quot;:&quot;Copa Airlines&quot;,&quot;code&quot;:&quot;CM&quot;,&quot;country&quot;:&quot;Panama&quot;,&quot;founded&quot;:&quot;1947&quot;,&quot;fleet_size&quot;:&quot;90+&quot;,&quot;headquarters&quot;:&quot;Panama City, Panama&quot;,&quot;website&quot;:&quot;https://www.copaair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Panama City&quot;,&quot;code&quot;:&quot;PTY&quot;},{&quot;name&quot;:&quot;Miami&quot;,&quot;code&quot;:&quot;MIA&quot;},{&quot;name&quot;:&quot;Bogota&quot;,&quot;code&quot;:&quot;BOG&quot;}]},{&quot;id&quot;:8,&quot;name&quot;:&quot;Cathay Pacific&quot;,&quot;code&quot;:&quot;CX&quot;,&quot;country&quot;:&quot;Hong Kong&quot;,&quot;founded&quot;:&quot;1946&quot;,&quot;fleet_size&quot;:&quot;150+&quot;,&quot;headquarters&quot;:&quot;Hong Kong&quot;,&quot;website&quot;:&quot;https://www.cathaypacific.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Hong Kong&quot;,&quot;code&quot;:&quot;HKG&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;}]},{&quot;id&quot;:4,&quot;name&quot;:&quot;British Airways&quot;,&quot;code&quot;:&quot;BA&quot;,&quot;country&quot;:&quot;United Kingdom&quot;,&quot;founded&quot;:&quot;1974&quot;,&quot;fleet_size&quot;:&quot;280+&quot;,&quot;headquarters&quot;:&quot;London, UK&quot;,&quot;website&quot;:&quot;https://www.britishairways.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;Hong Kong&quot;,&quot;code&quot;:&quot;HKG&quot;}]},{&quot;id&quot;:28,&quot;name&quot;:&quot;Avianca&quot;,&quot;code&quot;:&quot;AV&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;founded&quot;:&quot;1919&quot;,&quot;fleet_size&quot;:&quot;100+&quot;,&quot;headquarters&quot;:&quot;Bogota, Colombia&quot;,&quot;website&quot;:&quot;https://www.avianca.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Bogota&quot;,&quot;code&quot;:&quot;BOG&quot;},{&quot;name&quot;:&quot;Medellin&quot;,&quot;code&quot;:&quot;MDE&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:11,&quot;name&quot;:&quot;ANA All Nippon Airways&quot;,&quot;code&quot;:&quot;NH&quot;,&quot;country&quot;:&quot;Japan&quot;,&quot;founded&quot;:&quot;1952&quot;,&quot;fleet_size&quot;:&quot;250+&quot;,&quot;headquarters&quot;:&quot;Tokyo, Japan&quot;,&quot;website&quot;:&quot;https://www.ana.co.jp/en/us/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Tokyo&quot;,&quot;code&quot;:&quot;HND&quot;},{&quot;name&quot;:&quot;Osaka&quot;,&quot;code&quot;:&quot;KIX&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;}]},{&quot;id&quot;:3,&quot;name&quot;:&quot;American Airlines&quot;,&quot;code&quot;:&quot;AA&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;founded&quot;:&quot;1930&quot;,&quot;fleet_size&quot;:&quot;800+&quot;,&quot;headquarters&quot;:&quot;Fort Worth, Texas, USA&quot;,&quot;website&quot;:&quot;https://www.aa.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;},{&quot;name&quot;:&quot;Chicago&quot;,&quot;code&quot;:&quot;ORD&quot;},{&quot;name&quot;:&quot;Miami&quot;,&quot;code&quot;:&quot;MIA&quot;}]},{&quot;id&quot;:34,&quot;name&quot;:&quot;Allegiant Air&quot;,&quot;code&quot;:&quot;G4&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;founded&quot;:&quot;1997&quot;,&quot;fleet_size&quot;:&quot;100+&quot;,&quot;headquarters&quot;:&quot;Las Vegas, Nevada, USA&quot;,&quot;website&quot;:&quot;https://www.allegiantair.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Las Vegas&quot;,&quot;code&quot;:&quot;LAS&quot;},{&quot;name&quot;:&quot;Orlando&quot;,&quot;code&quot;:&quot;SFB&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;}]},{&quot;id&quot;:42,&quot;name&quot;:&quot;Alitalia&quot;,&quot;code&quot;:&quot;AZ&quot;,&quot;country&quot;:&quot;Italy&quot;,&quot;founded&quot;:&quot;1946&quot;,&quot;fleet_size&quot;:&quot;90+&quot;,&quot;headquarters&quot;:&quot;Rome, Italy&quot;,&quot;website&quot;:&quot;https://www.alitalia.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Rome&quot;,&quot;code&quot;:&quot;FCO&quot;},{&quot;name&quot;:&quot;Milan&quot;,&quot;code&quot;:&quot;MXP&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:33,&quot;name&quot;:&quot;Air Tahiti Nui&quot;,&quot;code&quot;:&quot;TN&quot;,&quot;country&quot;:&quot;French Polynesia&quot;,&quot;founded&quot;:&quot;1996&quot;,&quot;fleet_size&quot;:&quot;5+&quot;,&quot;headquarters&quot;:&quot;Papeete, French Polynesia&quot;,&quot;website&quot;:&quot;https://www.airtahitinui.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Papeete&quot;,&quot;code&quot;:&quot;PPT&quot;},{&quot;name&quot;:&quot;Los Angeles&quot;,&quot;code&quot;:&quot;LAX&quot;},{&quot;name&quot;:&quot;Auckland&quot;,&quot;code&quot;:&quot;AKL&quot;}]},{&quot;id&quot;:36,&quot;name&quot;:&quot;Air Serbia&quot;,&quot;code&quot;:&quot;JU&quot;,&quot;country&quot;:&quot;Serbia&quot;,&quot;founded&quot;:&quot;1927&quot;,&quot;fleet_size&quot;:&quot;20+&quot;,&quot;headquarters&quot;:&quot;Belgrade, Serbia&quot;,&quot;website&quot;:&quot;https://www.airserbia.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Belgrade&quot;,&quot;code&quot;:&quot;BEG&quot;},{&quot;name&quot;:&quot;Vienna&quot;,&quot;code&quot;:&quot;VIE&quot;},{&quot;name&quot;:&quot;Zurich&quot;,&quot;code&quot;:&quot;ZRH&quot;}]},{&quot;id&quot;:19,&quot;name&quot;:&quot;Air New Zealand&quot;,&quot;code&quot;:&quot;NZ&quot;,&quot;country&quot;:&quot;New Zealand&quot;,&quot;founded&quot;:&quot;1940&quot;,&quot;fleet_size&quot;:&quot;60+&quot;,&quot;headquarters&quot;:&quot;Auckland, New Zealand&quot;,&quot;website&quot;:&quot;https://www.airnewzealand.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Auckland&quot;,&quot;code&quot;:&quot;AKL&quot;},{&quot;name&quot;:&quot;Wellington&quot;,&quot;code&quot;:&quot;WLG&quot;},{&quot;name&quot;:&quot;Sydney&quot;,&quot;code&quot;:&quot;SYD&quot;}]},{&quot;id&quot;:30,&quot;name&quot;:&quot;Air Mauritius&quot;,&quot;code&quot;:&quot;MK&quot;,&quot;country&quot;:&quot;Mauritius&quot;,&quot;founded&quot;:&quot;1967&quot;,&quot;fleet_size&quot;:&quot;10+&quot;,&quot;headquarters&quot;:&quot;Port Louis, Mauritius&quot;,&quot;website&quot;:&quot;https://www.airmauritius.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Port Louis&quot;,&quot;code&quot;:&quot;MRU&quot;},{&quot;name&quot;:&quot;Johannesburg&quot;,&quot;code&quot;:&quot;JNB&quot;},{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;}]},{&quot;id&quot;:32,&quot;name&quot;:&quot;Air Malta&quot;,&quot;code&quot;:&quot;KM&quot;,&quot;country&quot;:&quot;Malta&quot;,&quot;founded&quot;:&quot;1973&quot;,&quot;fleet_size&quot;:&quot;10+&quot;,&quot;headquarters&quot;:&quot;Luqa, Malta&quot;,&quot;website&quot;:&quot;https://www.airmalta.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Luqa&quot;,&quot;code&quot;:&quot;MLA&quot;},{&quot;name&quot;:&quot;Rome&quot;,&quot;code&quot;:&quot;FCO&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LGW&quot;}]},{&quot;id&quot;:24,&quot;name&quot;:&quot;Air India&quot;,&quot;code&quot;:&quot;AI&quot;,&quot;country&quot;:&quot;India&quot;,&quot;founded&quot;:&quot;1932&quot;,&quot;fleet_size&quot;:&quot;100+&quot;,&quot;headquarters&quot;:&quot;New Delhi, India&quot;,&quot;website&quot;:&quot;https://www.airindia.in/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;New Delhi&quot;,&quot;code&quot;:&quot;DEL&quot;},{&quot;name&quot;:&quot;Mumbai&quot;,&quot;code&quot;:&quot;BOM&quot;},{&quot;name&quot;:&quot;London&quot;,&quot;code&quot;:&quot;LHR&quot;}]},{&quot;id&quot;:5,&quot;name&quot;:&quot;Air France&quot;,&quot;code&quot;:&quot;AF&quot;,&quot;country&quot;:&quot;France&quot;,&quot;founded&quot;:&quot;1933&quot;,&quot;fleet_size&quot;:&quot;220+&quot;,&quot;headquarters&quot;:&quot;Roissy-en-France, France&quot;,&quot;website&quot;:&quot;https://www.airfrance.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Paris&quot;,&quot;code&quot;:&quot;CDG&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;},{&quot;name&quot;:&quot;Tokyo&quot;,&quot;code&quot;:&quot;NRT&quot;}]},{&quot;id&quot;:17,&quot;name&quot;:&quot;Air China&quot;,&quot;code&quot;:&quot;CA&quot;,&quot;country&quot;:&quot;China&quot;,&quot;founded&quot;:&quot;1988&quot;,&quot;fleet_size&quot;:&quot;400+&quot;,&quot;headquarters&quot;:&quot;Beijing, China&quot;,&quot;website&quot;:&quot;https://www.airchina.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Beijing&quot;,&quot;code&quot;:&quot;PEK&quot;},{&quot;name&quot;:&quot;Shanghai&quot;,&quot;code&quot;:&quot;PVG&quot;},{&quot;name&quot;:&quot;Hong Kong&quot;,&quot;code&quot;:&quot;HKG&quot;}]},{&quot;id&quot;:15,&quot;name&quot;:&quot;Air Canada&quot;,&quot;code&quot;:&quot;AC&quot;,&quot;country&quot;:&quot;Canada&quot;,&quot;founded&quot;:&quot;1937&quot;,&quot;fleet_size&quot;:&quot;180+&quot;,&quot;headquarters&quot;:&quot;Montreal, Canada&quot;,&quot;website&quot;:&quot;https://www.aircanada.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Toronto&quot;,&quot;code&quot;:&quot;YYZ&quot;},{&quot;name&quot;:&quot;Vancouver&quot;,&quot;code&quot;:&quot;YVR&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]},{&quot;id&quot;:25,&quot;name&quot;:&quot;Air Baltic&quot;,&quot;code&quot;:&quot;BT&quot;,&quot;country&quot;:&quot;Latvia&quot;,&quot;founded&quot;:&quot;1995&quot;,&quot;fleet_size&quot;:&quot;30+&quot;,&quot;headquarters&quot;:&quot;Riga, Latvia&quot;,&quot;website&quot;:&quot;https://www.airbaltic.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Riga&quot;,&quot;code&quot;:&quot;RIX&quot;},{&quot;name&quot;:&quot;Tallinn&quot;,&quot;code&quot;:&quot;TLL&quot;},{&quot;name&quot;:&quot;Vilnius&quot;,&quot;code&quot;:&quot;VNO&quot;}]},{&quot;id&quot;:29,&quot;name&quot;:&quot;Air Astana&quot;,&quot;code&quot;:&quot;KC&quot;,&quot;country&quot;:&quot;Kazakhstan&quot;,&quot;founded&quot;:&quot;2001&quot;,&quot;fleet_size&quot;:&quot;30+&quot;,&quot;headquarters&quot;:&quot;Almaty, Kazakhstan&quot;,&quot;website&quot;:&quot;https://airastana.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Almaty&quot;,&quot;code&quot;:&quot;ALA&quot;},{&quot;name&quot;:&quot;Nur-Sultan&quot;,&quot;code&quot;:&quot;NQZ&quot;},{&quot;name&quot;:&quot;Istanbul&quot;,&quot;code&quot;:&quot;IST&quot;}]},{&quot;id&quot;:22,&quot;name&quot;:&quot;Air Asia&quot;,&quot;code&quot;:&quot;AK&quot;,&quot;country&quot;:&quot;Malaysia&quot;,&quot;founded&quot;:&quot;1993&quot;,&quot;fleet_size&quot;:&quot;250+&quot;,&quot;headquarters&quot;:&quot;Kuala Lumpur, Malaysia&quot;,&quot;website&quot;:&quot;https://www.airasia.com/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Kuala Lumpur&quot;,&quot;code&quot;:&quot;KUL&quot;},{&quot;name&quot;:&quot;Bangkok&quot;,&quot;code&quot;:&quot;BKK&quot;},{&quot;name&quot;:&quot;Singapore&quot;,&quot;code&quot;:&quot;SIN&quot;}]},{&quot;id&quot;:18,&quot;name&quot;:&quot;Aeroflot&quot;,&quot;code&quot;:&quot;SU&quot;,&quot;country&quot;:&quot;Russia&quot;,&quot;founded&quot;:&quot;1923&quot;,&quot;fleet_size&quot;:&quot;200+&quot;,&quot;headquarters&quot;:&quot;Moscow, Russia&quot;,&quot;website&quot;:&quot;https://www.aeroflot.ru/&quot;,&quot;destinations&quot;:[{&quot;name&quot;:&quot;Moscow&quot;,&quot;code&quot;:&quot;SVO&quot;},{&quot;name&quot;:&quot;Saint Petersburg&quot;,&quot;code&quot;:&quot;LED&quot;},{&quot;name&quot;:&quot;New York&quot;,&quot;code&quot;:&quot;JFK&quot;}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

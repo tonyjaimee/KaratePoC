@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"a4609554-d4eb-4a52-9840-c506671fc7ab",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tonyt.airports</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-02 03:23:49 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>GET /airports/{airportId}</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:120]"><span>[2:120]</span> <span>GET /airports?sort=name&amp;order=dec</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tonyt/airports.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Airports API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GetAirportById</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">GET /airports/{airportId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>397</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl = &quot;https://freetestapi.com/api/v1/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">42</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def airportId = 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def jsonBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Singapore Changi Airport&quot;,
+  &quot;code&quot;: &quot;SIN&quot;,
+  &quot;location&quot;: {
+      &quot;latitude&quot;: 1.3644,
+      &quot;longitude&quot;: 103.9915
+  },
+  &quot;city&quot;: &quot;Singapore&quot;,
+  &quot;country&quot;: &quot;Singapore&quot;,
+  &quot;timezone&quot;: &quot;Asia/Singapore&quot;,
+  &quot;terminals&quot;: [
+      {
+          &quot;name&quot;: &quot;Terminal 1&quot;,
+          &quot;gates&quot;: [
+              {
+                  &quot;gate_number&quot;: &quot;Gate A1&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;Singapore Airlines&quot;,
+                      &quot;SilkAir&quot;
+                  ]
+              },
+              {
+                  &quot;gate_number&quot;: &quot;Gate A2&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;AirAsia&quot;,
+                      &quot;Scoot&quot;
+                  ]
+              }
+          ]
+      },
+      {
+          &quot;name&quot;: &quot;Terminal 2&quot;,
+          &quot;gates&quot;: [
+              {
+                  &quot;gate_number&quot;: &quot;Gate B1&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;Emirates&quot;,
+                      &quot;Qantas&quot;
+                  ]
+              },
+              {
+                  &quot;gate_number&quot;: &quot;Gate B2&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;Cathay Pacific&quot;,
+                      &quot;Malaysia Airlines&quot;
+                  ]
+              }
+          ]
+      },
+      {
+          &quot;name&quot;: &quot;Terminal 3&quot;,
+          &quot;gates&quot;: [
+              {
+                  &quot;gate_number&quot;: &quot;Gate C1&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;Jetstar&quot;,
+                      &quot;Tigerair&quot;
+                  ]
+              },
+              {
+                  &quot;gate_number&quot;: &quot;Gate C2&quot;,
+                  &quot;airlines&quot;: [
+                      &quot;KLM&quot;,
+                      &quot;Delta Air Lines&quot;
+                  ]
+              }
+          ]
+      }
+  ],
+  &quot;airlines&quot;: [
+      &quot;Singapore Airlines&quot;,
+      &quot;SilkAir&quot;,
+      &quot;AirAsia&quot;,
+      &quot;Scoot&quot;,
+      &quot;Emirates&quot;,
+      &quot;Qantas&quot;,
+      &quot;Cathay Pacific&quot;,
+      &quot;Malaysia Airlines&quot;,
+      &quot;Jetstar&quot;,
+      &quot;Tigerair&quot;,
+      &quot;KLM&quot;,
+      &quot;Delta Air Lines&quot;
+  ],
+  &quot;services&quot;: [
+      &quot;Parking&quot;,
+      &quot;Restaurants&quot;,
+      &quot;Shops&quot;,
+      &quot;ATM&quot;,
+      &quot;Car Rental&quot;
+  ],
+  &quot;contact_info&quot;: {
+      &quot;phone&quot;: &quot;+65 6595 6868&quot;,
+      &quot;email&quot;: &quot;feedback@changiairport.com&quot;,
+      &quot;website&quot;: &quot;https://www.changiairport.com&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airports&#39;, airportId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># The above will generate GET /airports/1</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">312</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.115">15:23:48.802 request:
+1 &gt; GET https://freetestapi.com/api/v1/airports/1
+1 &gt; Content-Type: application/json
+1 &gt; Host: freetestapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:23:49.002 response time in milliseconds: 198
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 72
+1 &lt; Cache-Control: public, max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 02 Aug 2024 05:22:35 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+1 &lt; X-Matched-Path: /api/v1/airports/[id]
+1 &lt; X-Vercel-Cache: HIT
+1 &lt; X-Vercel-Execution-Region: iad1
+1 &lt; X-Vercel-Id: syd1::iad1::ggcjr-1722576228970-7aa991fc2403
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Singapore Changi Airport&quot;,&quot;code&quot;:&quot;SIN&quot;,&quot;location&quot;:{&quot;latitude&quot;:1.3644,&quot;longitude&quot;:103.9915},&quot;city&quot;:&quot;Singapore&quot;,&quot;country&quot;:&quot;Singapore&quot;,&quot;timezone&quot;:&quot;Asia/Singapore&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;,&quot;SilkAir&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;AirAsia&quot;,&quot;Scoot&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;,&quot;Qantas&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Cathay Pacific&quot;,&quot;Malaysia Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate C1&quot;,&quot;airlines&quot;:[&quot;Jetstar&quot;,&quot;Tigerair&quot;]},{&quot;gate_number&quot;:&quot;Gate C2&quot;,&quot;airlines&quot;:[&quot;KLM&quot;,&quot;Delta Air Lines&quot;]}]}],&quot;airlines&quot;:[&quot;Singapore Airlines&quot;,&quot;SilkAir&quot;,&quot;AirAsia&quot;,&quot;Scoot&quot;,&quot;Emirates&quot;,&quot;Qantas&quot;,&quot;Cathay Pacific&quot;,&quot;Malaysia Airlines&quot;,&quot;Jetstar&quot;,&quot;Tigerair&quot;,&quot;KLM&quot;,&quot;Delta Air Lines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+65 6595 6868&quot;,&quot;email&quot;:&quot;feedback@changiairport.com&quot;,&quot;website&quot;:&quot;https://www.changiairport.com&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == jsonBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:120]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GetAllAirports</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:120]</span>
+                <span class="scenario-name">GET /airports?sort=name&amp;order=dec</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>393</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:120]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:120]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set a configuration for the payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl = &quot;https://freetestapi.com/api/v1/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">42</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airports&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param sort = &#39;name&amp;order=dec&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># This param variable named &quot;sort&quot; will be appended towards the end of UR after ? =&gt; GET /airlines?sort=name&amp;order=dec</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">349</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.127">15:23:48.802 request:
+1 &gt; GET https://freetestapi.com/api/v1/airports?sort=name%26order%3Ddec
+1 &gt; Content-Type: application/json
+1 &gt; Host: freetestapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:23:48.998 response time in milliseconds: 191
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 72
+1 &lt; Cache-Control: public, max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 02 Aug 2024 05:22:36 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+1 &lt; X-Matched-Path: /api/v1/airports
+1 &lt; X-Vercel-Cache: HIT
+1 &lt; X-Vercel-Execution-Region: iad1
+1 &lt; X-Vercel-Id: syd1::iad1::m62hp-1722576228967-f9763e504d27
+1 &lt; Transfer-Encoding: chunked
+[{&quot;id&quot;:37,&quot;name&quot;:&quot;Zurich Airport&quot;,&quot;code&quot;:&quot;ZRH&quot;,&quot;location&quot;:{&quot;latitude&quot;:47.4647,&quot;longitude&quot;:8.5494},&quot;city&quot;:&quot;Zurich&quot;,&quot;country&quot;:&quot;Switzerland&quot;,&quot;timezone&quot;:&quot;Europe/Zurich&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Swiss International Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;Swiss International Air Lines&quot;,&quot;Lufthansa&quot;,&quot;British Airways&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+41 43 816 2211&quot;,&quot;email&quot;:&quot;info@zurich-airport.com&quot;,&quot;website&quot;:&quot;https://www.zurich-airport.com&quot;}},{&quot;id&quot;:49,&quot;name&quot;:&quot;Warsaw Chopin Airport&quot;,&quot;code&quot;:&quot;WAW&quot;,&quot;location&quot;:{&quot;latitude&quot;:52.167,&quot;longitude&quot;:20.9676},&quot;city&quot;:&quot;Warsaw&quot;,&quot;country&quot;:&quot;Poland&quot;,&quot;timezone&quot;:&quot;Europe/Warsaw&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;LOT Polish Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Wizz Air&quot;]}]}],&quot;airlines&quot;:[&quot;LOT Polish Airlines&quot;,&quot;Lufthansa&quot;,&quot;Ryanair&quot;,&quot;Wizz Air&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+48 22 650 42 20&quot;,&quot;email&quot;:&quot;info@polish-airports.com&quot;,&quot;website&quot;:&quot;https://www.lotnisko-chopina.pl/en/&quot;}},{&quot;id&quot;:39,&quot;name&quot;:&quot;Vienna International Airport&quot;,&quot;code&quot;:&quot;VIE&quot;,&quot;location&quot;:{&quot;latitude&quot;:48.1103,&quot;longitude&quot;:16.5697},&quot;city&quot;:&quot;Vienna&quot;,&quot;country&quot;:&quot;Austria&quot;,&quot;timezone&quot;:&quot;Europe/Vienna&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Austrian Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;Austrian Airlines&quot;,&quot;Lufthansa&quot;,&quot;Ryanair&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+43 1 70070&quot;,&quot;email&quot;:&quot;info@viennaairport.com&quot;,&quot;website&quot;:&quot;https://www.viennaairport.com&quot;}},{&quot;id&quot;:21,&quot;name&quot;:&quot;Toronto Pearson International Airport&quot;,&quot;code&quot;:&quot;YYZ&quot;,&quot;location&quot;:{&quot;latitude&quot;:43.6777,&quot;longitude&quot;:-79.6248},&quot;city&quot;:&quot;Toronto&quot;,&quot;country&quot;:&quot;Canada&quot;,&quot;timezone&quot;:&quot;America/Toronto&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air Canada&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;United Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;WestJet&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;Air Canada&quot;,&quot;United Airlines&quot;,&quot;WestJet&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 416-247-7678&quot;,&quot;email&quot;:&quot;ask@torontopearson.com&quot;,&quot;website&quot;:&quot;https://www.torontopearson.com&quot;}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Tokyo Haneda Airport&quot;,&quot;code&quot;:&quot;HND&quot;,&quot;location&quot;:{&quot;latitude&quot;:35.5485,&quot;longitude&quot;:139.7841},&quot;city&quot;:&quot;Tokyo&quot;,&quot;country&quot;:&quot;Japan&quot;,&quot;timezone&quot;:&quot;Asia/Tokyo&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air Japan&quot;,&quot;All Nippon Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Peach Aviation&quot;,&quot;Skymark Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Japan Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Peach Aviation&quot;,&quot;Skymark Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Air Japan&quot;,&quot;All Nippon Airways&quot;,&quot;Japan Airlines&quot;,&quot;Peach Aviation&quot;,&quot;Skymark Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+81 3 5757 8111&quot;,&quot;email&quot;:&quot;info@haneda-airport.jp&quot;,&quot;website&quot;:&quot;https://www.haneda-airport.jp&quot;}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Sydney Kingsford Smith Airport&quot;,&quot;code&quot;:&quot;SYD&quot;,&quot;location&quot;:{&quot;latitude&quot;:-33.9399,&quot;longitude&quot;:151.1753},&quot;city&quot;:&quot;Sydney&quot;,&quot;country&quot;:&quot;Australia&quot;,&quot;timezone&quot;:&quot;Australia/Sydney&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Qantas&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Virgin Australia&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Jetstar&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Tigerair&quot;]}]}],&quot;airlines&quot;:[&quot;Qantas&quot;,&quot;Virgin Australia&quot;,&quot;Jetstar&quot;,&quot;Tigerair&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+61 2 9667 9111&quot;,&quot;email&quot;:&quot;info@sydneyairport.com.au&quot;,&quot;website&quot;:&quot;https://www.sydneyairport.com.au&quot;}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Suvarnabhumi Airport&quot;,&quot;code&quot;:&quot;BKK&quot;,&quot;location&quot;:{&quot;latitude&quot;:13.6923,&quot;longitude&quot;:100.7508},&quot;city&quot;:&quot;Bangkok&quot;,&quot;country&quot;:&quot;Thailand&quot;,&quot;timezone&quot;:&quot;Asia/Bangkok&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Thai Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Bangkok Airways&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;AirAsia&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Vietnam Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Thai Airways&quot;,&quot;Bangkok Airways&quot;,&quot;AirAsia&quot;,&quot;Vietnam Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+66 2 132 1888&quot;,&quot;email&quot;:&quot;contact@airportthai.co.th&quot;,&quot;website&quot;:&quot;https://www.suvarnabhumiairport.com&quot;}},{&quot;id&quot;:40,&quot;name&quot;:&quot;Stockholm Arlanda Airport&quot;,&quot;code&quot;:&quot;ARN&quot;,&quot;location&quot;:{&quot;latitude&quot;:59.6496,&quot;longitude&quot;:17.9239},&quot;city&quot;:&quot;Stockholm&quot;,&quot;country&quot;:&quot;Sweden&quot;,&quot;timezone&quot;:&quot;Europe/Stockholm&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;SAS&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Norwegian&quot;]}]},{&quot;name&quot;:&quot;Terminal 5&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;SAS&quot;,&quot;Norwegian&quot;,&quot;Ryanair&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+46 10 109 10 00&quot;,&quot;email&quot;:&quot;info@swedavia.se&quot;,&quot;website&quot;:&quot;https://www.swedavia.com/arlanda&quot;}},{&quot;id&quot;:30,&quot;name&quot;:&quot;Soekarno-Hatta International Airport&quot;,&quot;code&quot;:&quot;CGK&quot;,&quot;location&quot;:{&quot;latitude&quot;:-6.1263,&quot;longitude&quot;:106.6558},&quot;city&quot;:&quot;Jakarta&quot;,&quot;country&quot;:&quot;Indonesia&quot;,&quot;timezone&quot;:&quot;Asia/Jakarta&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Garuda Indonesia&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lion Air&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;AirAsia&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Garuda Indonesia&quot;,&quot;Lion Air&quot;,&quot;AirAsia&quot;,&quot;Singapore Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+62 21 550 5179&quot;,&quot;email&quot;:&quot;ask@angkasapura2.co.id&quot;,&quot;website&quot;:&quot;https://www.cgk-airport.co.id&quot;}},{&quot;id&quot;:1,&quot;name&quot;:&quot;Singapore Changi Airport&quot;,&quot;code&quot;:&quot;SIN&quot;,&quot;location&quot;:{&quot;latitude&quot;:1.3644,&quot;longitude&quot;:103.9915},&quot;city&quot;:&quot;Singapore&quot;,&quot;country&quot;:&quot;Singapore&quot;,&quot;timezone&quot;:&quot;Asia/Singapore&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;,&quot;SilkAir&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;AirAsia&quot;,&quot;Scoot&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;,&quot;Qantas&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Cathay Pacific&quot;,&quot;Malaysia Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate C1&quot;,&quot;airlines&quot;:[&quot;Jetstar&quot;,&quot;Tigerair&quot;]},{&quot;gate_number&quot;:&quot;Gate C2&quot;,&quot;airlines&quot;:[&quot;KLM&quot;,&quot;Delta Air Lines&quot;]}]}],&quot;airlines&quot;:[&quot;Singapore Airlines&quot;,&quot;SilkAir&quot;,&quot;AirAsia&quot;,&quot;Scoot&quot;,&quot;Emirates&quot;,&quot;Qantas&quot;,&quot;Cathay Pacific&quot;,&quot;Malaysia Airlines&quot;,&quot;Jetstar&quot;,&quot;Tigerair&quot;,&quot;KLM&quot;,&quot;Delta Air Lines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+65 6595 6868&quot;,&quot;email&quot;:&quot;feedback@changiairport.com&quot;,&quot;website&quot;:&quot;https://www.changiairport.com&quot;}},{&quot;id&quot;:28,&quot;name&quot;:&quot;Sheremetyevo International Airport&quot;,&quot;code&quot;:&quot;SVO&quot;,&quot;location&quot;:{&quot;latitude&quot;:55.9726,&quot;longitude&quot;:37.4141},&quot;city&quot;:&quot;Moscow&quot;,&quot;country&quot;:&quot;Russia&quot;,&quot;timezone&quot;:&quot;Europe/Moscow&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Aeroflot&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;S7 Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal D&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;Aeroflot&quot;,&quot;S7 Airlines&quot;,&quot;Lufthansa&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+7 495 578 6565&quot;,&quot;email&quot;:&quot;info@svo.aero&quot;,&quot;website&quot;:&quot;https://www.svo.aero&quot;}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Shanghai Pudong International Airport&quot;,&quot;code&quot;:&quot;PVG&quot;,&quot;location&quot;:{&quot;latitude&quot;:31.1443,&quot;longitude&quot;:121.8083},&quot;city&quot;:&quot;Shanghai&quot;,&quot;country&quot;:&quot;China&quot;,&quot;timezone&quot;:&quot;Asia/Shanghai&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;China Eastern Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;China Southern Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Air China&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Hainan Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;China Eastern Airlines&quot;,&quot;China Southern Airlines&quot;,&quot;Air China&quot;,&quot;Hainan Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+86 21 38484500&quot;,&quot;email&quot;:&quot;pvg@cpiac.com.cn&quot;,&quot;website&quot;:&quot;https://en.shairport.com&quot;}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Paris Charles de Gaulle Airport&quot;,&quot;code&quot;:&quot;CDG&quot;,&quot;location&quot;:{&quot;latitude&quot;:49.0097,&quot;longitude&quot;:2.5479},&quot;city&quot;:&quot;Paris&quot;,&quot;country&quot;:&quot;France&quot;,&quot;timezone&quot;:&quot;Europe/Paris&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Air France&quot;,&quot;Lufthansa&quot;,&quot;Delta Air Lines&quot;,&quot;American Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+33 1 70 36 39 50&quot;,&quot;email&quot;:&quot;cdg.contact@adp.fr&quot;,&quot;website&quot;:&quot;https://www.parisaeroport.fr&quot;}},{&quot;id&quot;:13,&quot;name&quot;:&quot;O&#39;Hare International Airport&quot;,&quot;code&quot;:&quot;ORD&quot;,&quot;location&quot;:{&quot;latitude&quot;:41.9742,&quot;longitude&quot;:-87.9073},&quot;city&quot;:&quot;Chicago&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/Chicago&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;United Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air Canada&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Spirit Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;United Airlines&quot;,&quot;Air Canada&quot;,&quot;American Airlines&quot;,&quot;Spirit Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 800-832-6352&quot;,&quot;email&quot;:&quot;contactus@flychicago.com&quot;,&quot;website&quot;:&quot;https://www.flychicago.com&quot;}},{&quot;id&quot;:34,&quot;name&quot;:&quot;Ninoy Aquino International Airport&quot;,&quot;code&quot;:&quot;MNL&quot;,&quot;location&quot;:{&quot;latitude&quot;:14.5123,&quot;longitude&quot;:121.017},&quot;city&quot;:&quot;Manila&quot;,&quot;country&quot;:&quot;Philippines&quot;,&quot;timezone&quot;:&quot;Asia/Manila&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Philippine Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Cathay Pacific&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Cebu Pacific&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Philippine Airlines&quot;,&quot;Cathay Pacific&quot;,&quot;Cebu Pacific&quot;,&quot;Singapore Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+63 2 877 1109&quot;,&quot;email&quot;:&quot;contact@miaa.gov.ph&quot;,&quot;website&quot;:&quot;https://www.miaa.gov.ph&quot;}},{&quot;id&quot;:44,&quot;name&quot;:&quot;Netaji Subhas Chandra Bose International Airport&quot;,&quot;code&quot;:&quot;CCU&quot;,&quot;location&quot;:{&quot;latitude&quot;:22.642,&quot;longitude&quot;:88.4341},&quot;city&quot;:&quot;Kolkata&quot;,&quot;country&quot;:&quot;India&quot;,&quot;timezone&quot;:&quot;Asia/Kolkata&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air India&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;IndiGo&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;SpiceJet&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;GoAir&quot;]}]}],&quot;airlines&quot;:[&quot;Air India&quot;,&quot;IndiGo&quot;,&quot;SpiceJet&quot;,&quot;GoAir&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+91 033 2511 8036&quot;,&quot;email&quot;:&quot;apdkolkata@aai.aero&quot;,&quot;website&quot;:&quot;https://www.aai.aero/en/airports/kolkata&quot;}},{&quot;id&quot;:23,&quot;name&quot;:&quot;Munich Airport&quot;,&quot;code&quot;:&quot;MUC&quot;,&quot;location&quot;:{&quot;latitude&quot;:48.3537,&quot;longitude&quot;:11.7861},&quot;city&quot;:&quot;Munich&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;timezone&quot;:&quot;Europe/Berlin&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;United Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;Lufthansa&quot;,&quot;United Airlines&quot;,&quot;Air France&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+49 89 975 00&quot;,&quot;email&quot;:&quot;service@muc.de&quot;,&quot;website&quot;:&quot;https://www.munich-airport.de&quot;}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Los Angeles International Airport&quot;,&quot;code&quot;:&quot;LAX&quot;,&quot;location&quot;:{&quot;latitude&quot;:33.9425,&quot;longitude&quot;:-118.4081},&quot;city&quot;:&quot;Los Angeles&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/Los_Angeles&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Southwest Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Alaska Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Virgin Australia&quot;]}]}],&quot;airlines&quot;:[&quot;Southwest Airlines&quot;,&quot;Alaska Airlines&quot;,&quot;Delta Air Lines&quot;,&quot;Virgin Australia&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 855-463-5252&quot;,&quot;email&quot;:&quot;laxpr@lawa.org&quot;,&quot;website&quot;:&quot;https://www.flylax.com&quot;}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Los Angeles International Airport&quot;,&quot;code&quot;:&quot;LAX&quot;,&quot;location&quot;:{&quot;latitude&quot;:33.9425,&quot;longitude&quot;:-118.4081},&quot;city&quot;:&quot;Los Angeles&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/Los_Angeles&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Southwest Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Alaska Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Virgin Australia&quot;]}]}],&quot;airlines&quot;:[&quot;Southwest Airlines&quot;,&quot;Alaska Airlines&quot;,&quot;Delta Air Lines&quot;,&quot;Virgin Australia&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 855-463-5252&quot;,&quot;email&quot;:&quot;laxpr@lawa.org&quot;,&quot;website&quot;:&quot;https://www.flylax.com&quot;}},{&quot;id&quot;:8,&quot;name&quot;:&quot;London Heathrow Airport&quot;,&quot;code&quot;:&quot;LHR&quot;,&quot;location&quot;:{&quot;latitude&quot;:51.4694,&quot;longitude&quot;:-0.4543},&quot;city&quot;:&quot;London&quot;,&quot;country&quot;:&quot;United Kingdom&quot;,&quot;timezone&quot;:&quot;Europe/London&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]}]},{&quot;name&quot;:&quot;Terminal 5&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Qantas&quot;]}]}],&quot;airlines&quot;:[&quot;British Airways&quot;,&quot;Air France&quot;,&quot;American Airlines&quot;,&quot;Qantas&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+44 844 335 1801&quot;,&quot;email&quot;:&quot;customer.relations@heathrow.com&quot;,&quot;website&quot;:&quot;https://www.heathrow.com&quot;}},{&quot;id&quot;:43,&quot;name&quot;:&quot;Lisbon Airport&quot;,&quot;code&quot;:&quot;LIS&quot;,&quot;location&quot;:{&quot;latitude&quot;:38.7701,&quot;longitude&quot;:-9.1289},&quot;city&quot;:&quot;Lisbon&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;timezone&quot;:&quot;Europe/Lisbon&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;TAP Air Portugal&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;TAP Air Portugal&quot;,&quot;Ryanair&quot;,&quot;British Airways&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+351 218 413 500&quot;,&quot;email&quot;:&quot;airport@ana.pt&quot;,&quot;website&quot;:&quot;https://www.aeroportolisboa.pt/en/lis/homepage&quot;}},{&quot;id&quot;:35,&quot;name&quot;:&quot;Leonardo da Vinci-Fiumicino Airport&quot;,&quot;code&quot;:&quot;FCO&quot;,&quot;location&quot;:{&quot;latitude&quot;:41.799,&quot;longitude&quot;:12.2463},&quot;city&quot;:&quot;Rome&quot;,&quot;country&quot;:&quot;Italy&quot;,&quot;timezone&quot;:&quot;Europe/Rome&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Alitalia&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;Alitalia&quot;,&quot;Lufthansa&quot;,&quot;Ryanair&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+39 06 65951&quot;,&quot;email&quot;:&quot;info@adr.it&quot;,&quot;website&quot;:&quot;https://www.adr.it&quot;}},{&quot;id&quot;:29,&quot;name&quot;:&quot;Kuala Lumpur International Airport&quot;,&quot;code&quot;:&quot;KUL&quot;,&quot;location&quot;:{&quot;latitude&quot;:2.7456,&quot;longitude&quot;:101.7099},&quot;city&quot;:&quot;Sepang&quot;,&quot;country&quot;:&quot;Malaysia&quot;,&quot;timezone&quot;:&quot;Asia/Kuala_Lumpur&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Main Terminal&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Malaysia Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;AirAsia&quot;]}]},{&quot;name&quot;:&quot;Satellite Terminal&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Malaysia Airlines&quot;,&quot;AirAsia&quot;,&quot;Emirates&quot;,&quot;Singapore Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+60 3-8776 2000&quot;,&quot;email&quot;:&quot;contact@klia.com.my&quot;,&quot;website&quot;:&quot;https://www.klia.com.my&quot;}},{&quot;id&quot;:33,&quot;name&quot;:&quot;Kempegowda International Airport&quot;,&quot;code&quot;:&quot;BLR&quot;,&quot;location&quot;:{&quot;latitude&quot;:13.1986,&quot;longitude&quot;:77.7066},&quot;city&quot;:&quot;Bengaluru&quot;,&quot;country&quot;:&quot;India&quot;,&quot;timezone&quot;:&quot;Asia/Kolkata&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;IndiGo&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air India&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;SpiceJet&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;GoAir&quot;]}]}],&quot;airlines&quot;:[&quot;IndiGo&quot;,&quot;Air India&quot;,&quot;SpiceJet&quot;,&quot;GoAir&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+91 080 2201 1000&quot;,&quot;email&quot;:&quot;info@bialairport.com&quot;,&quot;website&quot;:&quot;https://www.bengaluruairport.com&quot;}},{&quot;id&quot;:32,&quot;name&quot;:&quot;Kansai International Airport&quot;,&quot;code&quot;:&quot;KIX&quot;,&quot;location&quot;:{&quot;latitude&quot;:34.4347,&quot;longitude&quot;:135.2441},&quot;city&quot;:&quot;Osaka&quot;,&quot;country&quot;:&quot;Japan&quot;,&quot;timezone&quot;:&quot;Asia/Tokyo&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Japan Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;ANA&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;AirAsia Japan&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Peach Aviation&quot;]}]}],&quot;airlines&quot;:[&quot;Japan Airlines&quot;,&quot;ANA&quot;,&quot;AirAsia Japan&quot;,&quot;Peach Aviation&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+81 72-455-2500&quot;,&quot;email&quot;:&quot;info@kansai-airport.or.jp&quot;,&quot;website&quot;:&quot;https://www.kansai-airport.or.jp/en&quot;}},{&quot;id&quot;:47,&quot;name&quot;:&quot;Jorge Chávez International Airport&quot;,&quot;code&quot;:&quot;LIM&quot;,&quot;location&quot;:{&quot;latitude&quot;:-12.024,&quot;longitude&quot;:-77.1145},&quot;city&quot;:&quot;Lima&quot;,&quot;country&quot;:&quot;Peru&quot;,&quot;timezone&quot;:&quot;America/Lima&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;LATAM Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Avianca&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Sky Airline&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Copa Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;LATAM Airlines&quot;,&quot;Avianca&quot;,&quot;Sky Airline&quot;,&quot;Copa Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+51 1 517 3100&quot;,&quot;email&quot;:&quot;informes@lima-airport.com&quot;,&quot;website&quot;:&quot;https://www.lima-airport.com/&quot;}},{&quot;id&quot;:20,&quot;name&quot;:&quot;John F. Kennedy International Airport&quot;,&quot;code&quot;:&quot;JFK&quot;,&quot;location&quot;:{&quot;latitude&quot;:40.6413,&quot;longitude&quot;:-73.7781},&quot;city&quot;:&quot;New York&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Japan Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 4&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;KLM&quot;]}]}],&quot;airlines&quot;:[&quot;Air France&quot;,&quot;Japan Airlines&quot;,&quot;Delta Air Lines&quot;,&quot;KLM&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 718-244-4444&quot;,&quot;email&quot;:&quot;jfkairport@panynj.gov&quot;,&quot;website&quot;:&quot;https://www.jfkairport.com&quot;}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Istanbul Airport&quot;,&quot;code&quot;:&quot;IST&quot;,&quot;location&quot;:{&quot;latitude&quot;:41.2754,&quot;longitude&quot;:28.7518},&quot;city&quot;:&quot;Istanbul&quot;,&quot;country&quot;:&quot;Turkey&quot;,&quot;timezone&quot;:&quot;Europe/Istanbul&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Main Terminal&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Turkish Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Pegasus Airlines&quot;]}]},{&quot;name&quot;:&quot;Domestic Terminal&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;AnadoluJet&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;SunExpress&quot;]}]}],&quot;airlines&quot;:[&quot;Turkish Airlines&quot;,&quot;Pegasus Airlines&quot;,&quot;AnadoluJet&quot;,&quot;SunExpress&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+90 444 1 442&quot;,&quot;email&quot;:&quot;info@igairport.com&quot;,&quot;website&quot;:&quot;https://www.igairport.com&quot;}},{&quot;id&quot;:25,&quot;name&quot;:&quot;Indira Gandhi International Airport&quot;,&quot;code&quot;:&quot;DEL&quot;,&quot;location&quot;:{&quot;latitude&quot;:28.5562,&quot;longitude&quot;:77.0999},&quot;city&quot;:&quot;Delhi&quot;,&quot;country&quot;:&quot;India&quot;,&quot;timezone&quot;:&quot;Asia/Kolkata&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air India&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;SpiceJet&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;IndiGo&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Vistara&quot;]}]}],&quot;airlines&quot;:[&quot;Air India&quot;,&quot;SpiceJet&quot;,&quot;IndiGo&quot;,&quot;Vistara&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+91 124 337 6000&quot;,&quot;email&quot;:&quot;feedback.igiairport@aai.aero&quot;,&quot;website&quot;:&quot;https://www.newdelhiairport.in&quot;}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Incheon International Airport&quot;,&quot;code&quot;:&quot;ICN&quot;,&quot;location&quot;:{&quot;latitude&quot;:37.4602,&quot;longitude&quot;:126.4407},&quot;city&quot;:&quot;Seoul&quot;,&quot;country&quot;:&quot;South Korea&quot;,&quot;timezone&quot;:&quot;Asia/Seoul&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Asiana Airlines&quot;,&quot;Korean Air&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;,&quot;Lufthansa&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]}]}],&quot;airlines&quot;:[&quot;Asiana Airlines&quot;,&quot;Korean Air&quot;,&quot;Air France&quot;,&quot;Lufthansa&quot;,&quot;Delta Air Lines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+82 2 1577 2600&quot;,&quot;email&quot;:&quot;icnair@airport.kr&quot;,&quot;website&quot;:&quot;https://www.airport.kr&quot;}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Hong Kong International Airport&quot;,&quot;code&quot;:&quot;HKG&quot;,&quot;location&quot;:{&quot;latitude&quot;:22.308,&quot;longitude&quot;:113.9185},&quot;city&quot;:&quot;Hong Kong&quot;,&quot;country&quot;:&quot;Hong Kong&quot;,&quot;timezone&quot;:&quot;Asia/Hong_Kong&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Cathay Pacific&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air China&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Singapore Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Cathay Dragon&quot;]}]}],&quot;airlines&quot;:[&quot;Cathay Pacific&quot;,&quot;Air China&quot;,&quot;Singapore Airlines&quot;,&quot;Cathay Dragon&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+852 2181 8888&quot;,&quot;email&quot;:&quot;enquiry@hkairport.com&quot;,&quot;website&quot;:&quot;https://www.hongkongairport.com&quot;}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Hartsfield-Jackson Atlanta International Airport&quot;,&quot;code&quot;:&quot;ATL&quot;,&quot;location&quot;:{&quot;latitude&quot;:33.6407,&quot;longitude&quot;:-84.4277},&quot;city&quot;:&quot;Atlanta&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Southwest Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;United Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Delta Air Lines&quot;,&quot;Southwest Airlines&quot;,&quot;American Airlines&quot;,&quot;United Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 800-897-1910&quot;,&quot;email&quot;:&quot;atl.customerservice@atl.com&quot;,&quot;website&quot;:&quot;https://www.atl.com&quot;}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Hamad International Airport&quot;,&quot;code&quot;:&quot;DOH&quot;,&quot;location&quot;:{&quot;latitude&quot;:25.276987,&quot;longitude&quot;:51.608189},&quot;city&quot;:&quot;Doha&quot;,&quot;country&quot;:&quot;Qatar&quot;,&quot;timezone&quot;:&quot;Asia/Qatar&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Qatar Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]}]}],&quot;airlines&quot;:[&quot;Qatar Airways&quot;,&quot;Emirates&quot;,&quot;British Airways&quot;,&quot;Air France&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+974 4010 6666&quot;,&quot;email&quot;:&quot;info@dohairport.com&quot;,&quot;website&quot;:&quot;https://dohahamadairport.com&quot;}},{&quot;id&quot;:45,&quot;name&quot;:&quot;Galeão International Airport&quot;,&quot;code&quot;:&quot;GIG&quot;,&quot;location&quot;:{&quot;latitude&quot;:-22.805,&quot;longitude&quot;:-43.2506},&quot;city&quot;:&quot;Rio de Janeiro&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;America/Sao_Paulo&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;LATAM Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Azul Brazilian Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Gol Transportes Aéreos&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Avianca Brazil&quot;]}]}],&quot;airlines&quot;:[&quot;LATAM Airlines&quot;,&quot;Azul Brazilian Airlines&quot;,&quot;Gol Transportes Aéreos&quot;,&quot;Avianca Brazil&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+55 21 3004-6050&quot;,&quot;email&quot;:&quot;sac@riogaleao.com&quot;,&quot;website&quot;:&quot;https://www.riogaleao.com/en/&quot;}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Frankfurt Airport&quot;,&quot;code&quot;:&quot;FRA&quot;,&quot;location&quot;:{&quot;latitude&quot;:50.0344,&quot;longitude&quot;:8.5624},&quot;city&quot;:&quot;Frankfurt&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;timezone&quot;:&quot;Europe/Berlin&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Lufthansa&quot;,&quot;Air France&quot;,&quot;Delta Air Lines&quot;,&quot;American Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+49 180 6 3724636&quot;,&quot;email&quot;:&quot;info@fraport.de&quot;,&quot;website&quot;:&quot;https://www.frankfurt-airport.com&quot;}},{&quot;id&quot;:46,&quot;name&quot;:&quot;El Dorado International Airport&quot;,&quot;code&quot;:&quot;BOG&quot;,&quot;location&quot;:{&quot;latitude&quot;:4.7016,&quot;longitude&quot;:-74.1466},&quot;city&quot;:&quot;Bogotá&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;timezone&quot;:&quot;America/Bogota&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Avianca&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;LATAM Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Copa Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Aeroméxico&quot;]}]}],&quot;airlines&quot;:[&quot;Avianca&quot;,&quot;LATAM Airlines&quot;,&quot;Copa Airlines&quot;,&quot;Aeroméxico&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+57 1 425 1000&quot;,&quot;email&quot;:&quot;atencion.cliente@opain.com.co&quot;,&quot;website&quot;:&quot;https://eldorado.aero/en/&quot;}},{&quot;id&quot;:22,&quot;name&quot;:&quot;Dublin Airport&quot;,&quot;code&quot;:&quot;DUB&quot;,&quot;location&quot;:{&quot;latitude&quot;:53.4214,&quot;longitude&quot;:-6.2701},&quot;city&quot;:&quot;Dublin&quot;,&quot;country&quot;:&quot;Ireland&quot;,&quot;timezone&quot;:&quot;Europe/Dublin&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Aer Lingus&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]}],&quot;airlines&quot;:[&quot;Aer Lingus&quot;,&quot;Ryanair&quot;,&quot;British Airways&quot;,&quot;Lufthansa&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+353 1 814 1111&quot;,&quot;email&quot;:&quot;customerexperience@dublinairport.com&quot;,&quot;website&quot;:&quot;https://www.dublinairport.com&quot;}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Dubai International Airport&quot;,&quot;code&quot;:&quot;DXB&quot;,&quot;location&quot;:{&quot;latitude&quot;:25.2532,&quot;longitude&quot;:55.3657},&quot;city&quot;:&quot;Dubai&quot;,&quot;country&quot;:&quot;United Arab Emirates&quot;,&quot;timezone&quot;:&quot;Asia/Dubai&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Qatar Airways&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]}]}],&quot;airlines&quot;:[&quot;Emirates&quot;,&quot;Qatar Airways&quot;,&quot;British Airways&quot;,&quot;Air France&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+971 4 224 5555&quot;,&quot;email&quot;:&quot;customer.care@dubaiairports.ae&quot;,&quot;website&quot;:&quot;https://www.dubaiairports.ae&quot;}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Dallas/Fort Worth International Airport&quot;,&quot;code&quot;:&quot;DFW&quot;,&quot;location&quot;:{&quot;latitude&quot;:32.8998,&quot;longitude&quot;:-97.0403},&quot;city&quot;:&quot;Dallas/Fort Worth&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;timezone&quot;:&quot;America/Chicago&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;American Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Delta Air Lines&quot;]}]},{&quot;name&quot;:&quot;Terminal B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;United Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;JetBlue Airways&quot;]}]}],&quot;airlines&quot;:[&quot;American Airlines&quot;,&quot;Delta Air Lines&quot;,&quot;United Airlines&quot;,&quot;JetBlue Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+1 972-973-8888&quot;,&quot;email&quot;:&quot;customerservice@dfwairport.com&quot;,&quot;website&quot;:&quot;https://www.dfwairport.com&quot;}},{&quot;id&quot;:42,&quot;name&quot;:&quot;Copenhagen Airport&quot;,&quot;code&quot;:&quot;CPH&quot;,&quot;location&quot;:{&quot;latitude&quot;:55.618,&quot;longitude&quot;:12.6561},&quot;city&quot;:&quot;Copenhagen&quot;,&quot;country&quot;:&quot;Denmark&quot;,&quot;timezone&quot;:&quot;Europe/Copenhagen&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;SAS&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Norwegian&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]}],&quot;airlines&quot;:[&quot;SAS&quot;,&quot;Norwegian&quot;,&quot;Lufthansa&quot;,&quot;Emirates&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+45 32 31 32 31&quot;,&quot;email&quot;:&quot;cphweb@cph.dk&quot;,&quot;website&quot;:&quot;https://www.cph.dk&quot;}},{&quot;id&quot;:27,&quot;name&quot;:&quot;Chhatrapati Shivaji International Airport&quot;,&quot;code&quot;:&quot;BOM&quot;,&quot;location&quot;:{&quot;latitude&quot;:19.0896,&quot;longitude&quot;:72.8656},&quot;city&quot;:&quot;Mumbai&quot;,&quot;country&quot;:&quot;India&quot;,&quot;timezone&quot;:&quot;Asia/Kolkata&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air India&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;GoAir&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;IndiGo&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Vistara&quot;]}]}],&quot;airlines&quot;:[&quot;Air India&quot;,&quot;GoAir&quot;,&quot;IndiGo&quot;,&quot;Vistara&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+91 22 6685 1010&quot;,&quot;email&quot;:&quot;csia.gmu@gvk.com&quot;,&quot;website&quot;:&quot;https://www.csia.in&quot;}},{&quot;id&quot;:48,&quot;name&quot;:&quot;Budapest Ferenc Liszt International Airport&quot;,&quot;code&quot;:&quot;BUD&quot;,&quot;location&quot;:{&quot;latitude&quot;:47.4297,&quot;longitude&quot;:19.2616},&quot;city&quot;:&quot;Budapest&quot;,&quot;country&quot;:&quot;Hungary&quot;,&quot;timezone&quot;:&quot;Europe/Budapest&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 2A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Wizz Air&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]}]},{&quot;name&quot;:&quot;Terminal 2B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Turkish Airlines&quot;]}]}],&quot;airlines&quot;:[&quot;Wizz Air&quot;,&quot;Ryanair&quot;,&quot;Lufthansa&quot;,&quot;Turkish Airlines&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+36 1 296 9696&quot;,&quot;email&quot;:&quot;bud_airport@bud.hu&quot;,&quot;website&quot;:&quot;https://www.bud.hu/&quot;}},{&quot;id&quot;:31,&quot;name&quot;:&quot;Ben Gurion Airport&quot;,&quot;code&quot;:&quot;TLV&quot;,&quot;location&quot;:{&quot;latitude&quot;:32.0055,&quot;longitude&quot;:34.8854},&quot;city&quot;:&quot;Tel Aviv&quot;,&quot;country&quot;:&quot;Israel&quot;,&quot;timezone&quot;:&quot;Asia/Jerusalem&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;El Al&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Arkia&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]}],&quot;airlines&quot;:[&quot;El Al&quot;,&quot;Arkia&quot;,&quot;British Airways&quot;,&quot;Lufthansa&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+972 3-972-3333&quot;,&quot;email&quot;:&quot;info@tlv-airport.co.il&quot;,&quot;website&quot;:&quot;https://www.iaa.gov.il/en/airports/bengurion&quot;}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Beijing Capital International Airport&quot;,&quot;code&quot;:&quot;PEK&quot;,&quot;location&quot;:{&quot;latitude&quot;:40.0801,&quot;longitude&quot;:116.5849},&quot;city&quot;:&quot;Beijing&quot;,&quot;country&quot;:&quot;China&quot;,&quot;timezone&quot;:&quot;Asia/Shanghai&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Air China&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;China Southern Airlines&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Hainan Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;XiamenAir&quot;]}]}],&quot;airlines&quot;:[&quot;Air China&quot;,&quot;China Southern Airlines&quot;,&quot;Hainan Airlines&quot;,&quot;XiamenAir&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+86 10 96158&quot;,&quot;email&quot;:&quot;peking_apo@bcia.com.cn&quot;,&quot;website&quot;:&quot;https://en.bcia.com.cn&quot;}},{&quot;id&quot;:41,&quot;name&quot;:&quot;Barcelona–El Prat Airport&quot;,&quot;code&quot;:&quot;BCN&quot;,&quot;location&quot;:{&quot;latitude&quot;:41.2974,&quot;longitude&quot;:2.0833},&quot;city&quot;:&quot;Barcelona&quot;,&quot;country&quot;:&quot;Spain&quot;,&quot;timezone&quot;:&quot;Europe/Madrid&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Vueling&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;Vueling&quot;,&quot;Ryanair&quot;,&quot;Lufthansa&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+34 91 321 10 00&quot;,&quot;email&quot;:&quot;bcn_informacion@aena.es&quot;,&quot;website&quot;:&quot;https://www.aena.es/en/barcelona-airport/index.html&quot;}},{&quot;id&quot;:24,&quot;name&quot;:&quot;Barcelona-El Prat Airport&quot;,&quot;code&quot;:&quot;BCN&quot;,&quot;location&quot;:{&quot;latitude&quot;:41.2974,&quot;longitude&quot;:2.0833},&quot;city&quot;:&quot;Barcelona&quot;,&quot;country&quot;:&quot;Spain&quot;,&quot;timezone&quot;:&quot;Europe/Madrid&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Iberia&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Vueling&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;EasyJet&quot;]}]}],&quot;airlines&quot;:[&quot;Iberia&quot;,&quot;Vueling&quot;,&quot;Ryanair&quot;,&quot;EasyJet&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+34 902 40 47 04&quot;,&quot;email&quot;:&quot;bcl_informacio@aena.es&quot;,&quot;website&quot;:&quot;https://www.aena.es/en/barcelona-airport/index.html&quot;}},{&quot;id&quot;:50,&quot;name&quot;:&quot;Athens International Airport&quot;,&quot;code&quot;:&quot;ATH&quot;,&quot;location&quot;:{&quot;latitude&quot;:37.9364,&quot;longitude&quot;:23.9475},&quot;city&quot;:&quot;Athens&quot;,&quot;country&quot;:&quot;Greece&quot;,&quot;timezone&quot;:&quot;Europe/Athens&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal A&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Aegean Airlines&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Olympic Air&quot;]}]},{&quot;name&quot;:&quot;Terminal B&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]}]}],&quot;airlines&quot;:[&quot;Aegean Airlines&quot;,&quot;Olympic Air&quot;,&quot;Ryanair&quot;,&quot;Lufthansa&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+30 210 353 0000&quot;,&quot;email&quot;:&quot;contact@aia.gr&quot;,&quot;website&quot;:&quot;https://www.aia.gr/&quot;}},{&quot;id&quot;:36,&quot;name&quot;:&quot;Amsterdam Airport Schiphol&quot;,&quot;code&quot;:&quot;AMS&quot;,&quot;location&quot;:{&quot;latitude&quot;:52.3086,&quot;longitude&quot;:4.7642},&quot;city&quot;:&quot;Amsterdam&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;timezone&quot;:&quot;Europe/Amsterdam&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;KLM&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air France&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Lufthansa&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;KLM&quot;,&quot;Air France&quot;,&quot;Lufthansa&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+31 20 794 0800&quot;,&quot;email&quot;:&quot;info@schiphol.nl&quot;,&quot;website&quot;:&quot;https://www.schiphol.nl&quot;}},{&quot;id&quot;:38,&quot;name&quot;:&quot;Adolfo Suárez Madrid-Barajas Airport&quot;,&quot;code&quot;:&quot;MAD&quot;,&quot;location&quot;:{&quot;latitude&quot;:40.4902,&quot;longitude&quot;:-3.5679},&quot;city&quot;:&quot;Madrid&quot;,&quot;country&quot;:&quot;Spain&quot;,&quot;timezone&quot;:&quot;Europe/Madrid&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Iberia&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Air Europa&quot;]}]},{&quot;name&quot;:&quot;Terminal 2&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Ryanair&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;British Airways&quot;]}]}],&quot;airlines&quot;:[&quot;Iberia&quot;,&quot;Air Europa&quot;,&quot;Ryanair&quot;,&quot;British Airways&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+34 913 21 10 00&quot;,&quot;email&quot;:&quot;madinfo@aena.es&quot;,&quot;website&quot;:&quot;https://www.aeropuertomadrid-barajas.com&quot;}},{&quot;id&quot;:26,&quot;name&quot;:&quot;Abu Dhabi International Airport&quot;,&quot;code&quot;:&quot;AUH&quot;,&quot;location&quot;:{&quot;latitude&quot;:24.4331,&quot;longitude&quot;:54.6512},&quot;city&quot;:&quot;Abu Dhabi&quot;,&quot;country&quot;:&quot;United Arab Emirates&quot;,&quot;timezone&quot;:&quot;Asia/Dubai&quot;,&quot;terminals&quot;:[{&quot;name&quot;:&quot;Terminal 1&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate A1&quot;,&quot;airlines&quot;:[&quot;Etihad Airways&quot;]},{&quot;gate_number&quot;:&quot;Gate A2&quot;,&quot;airlines&quot;:[&quot;Emirates&quot;]}]},{&quot;name&quot;:&quot;Terminal 3&quot;,&quot;gates&quot;:[{&quot;gate_number&quot;:&quot;Gate B1&quot;,&quot;airlines&quot;:[&quot;Air Arabia&quot;]},{&quot;gate_number&quot;:&quot;Gate B2&quot;,&quot;airlines&quot;:[&quot;Flydubai&quot;]}]}],&quot;airlines&quot;:[&quot;Etihad Airways&quot;,&quot;Emirates&quot;,&quot;Air Arabia&quot;,&quot;Flydubai&quot;],&quot;services&quot;:[&quot;Parking&quot;,&quot;Restaurants&quot;,&quot;Shops&quot;,&quot;ATM&quot;,&quot;Car Rental&quot;],&quot;contact_info&quot;:{&quot;phone&quot;:&quot;+971 2 505 5555&quot;,&quot;email&quot;:&quot;feedback@adac.ae&quot;,&quot;website&quot;:&quot;https://www.abudhabiairport.ae&quot;}}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

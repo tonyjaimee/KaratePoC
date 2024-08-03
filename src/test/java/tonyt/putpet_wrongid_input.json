@@ -1,0 +1,18 @@
+{
+    "id": 9999,
+    "name": "Dogs",
+    "photoUrls": [
+        "sunt ullamco dolor"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "tag2"
+        },
+        {
+            "id": 2,
+            "name": "tag3"
+        }
+    ],
+    "status": "available"
+}
