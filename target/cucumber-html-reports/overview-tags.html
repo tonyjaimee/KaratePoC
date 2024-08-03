@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@GetAirlineById",  "@GetAirportById",  "@GetAllAirlines",  "@GetAllAirports",  "@PutPet",  "@PutPet500", ] ,
+        labels:  [ "@GetAirlineById",  "@GetAirportById",  "@GetAllAirlines",  "@GetAllAirports",  "@PutPetDataValidation",  "@PutPetSchemaValidation",  "@PutUsersDataValidation", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  91.67,  100.00, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  4.17,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  4.17,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>02 Aug 2024, 15:41</td>
+      <td>04 Aug 2024, 00:46</td>
     </tr>
   </tbody>
 </table>
@@ -208,7 +208,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="384796585">0.384</td>
+        <td class="duration" data-value="436366708">0.436</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -225,7 +225,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="384571499">0.384</td>
+        <td class="duration" data-value="450171125">0.450</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -242,7 +242,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="374426958">0.374</td>
+        <td class="duration" data-value="427426166">0.427</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -259,41 +259,58 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="379583252">0.379</td>
+        <td class="duration" data-value="433080377">0.433</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_1220097007.html">@PutPet</a></td>
+        <td class="tagname"><a href="report-tag_3200672722.html">@PutPetDataValidation</a></td>
 
-        <td      class="passed"    >22</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
+        <td      class="passed"    >15</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">24</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
 
         <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
+        <td >0</td>
+        <td class="total">3</td>
 
-        <td class="duration" data-value="4328954916">4.328</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="3525240416">3.525</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_3896759044.html">@PutPet500</a></td>
+        <td class="tagname"><a href="report-tag_279452937.html">@PutPetSchemaValidation</a></td>
 
-        <td      class="passed"    >5</td>
+        <td      class="passed"    >15</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">15</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >3</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td class="total">3</td>
 
-        <td class="duration" data-value="1086421666">1.086</td>
+        <td class="duration" data-value="3970594917">3.970</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3254908091.html">@PutUsersDataValidation</a></td>
+
+        <td      class="passed"    >10</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">10</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="1447732457">1.447</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -301,33 +318,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>51</td>
-      <td>1</td>
-      <td>1</td>
+      <td>64</td>
       <td>0</td>
       <td>0</td>
-      <td>53</td>
+      <td>0</td>
+      <td>0</td>
+      <td>64</td>
 
-      <td>8</td>
-      <td>1</td>
-      <td>9</td>
+      <td>12</td>
+      <td>0</td>
+      <td>12</td>
 
-      <td class="duration">6.938</td>
-      <td>6</td>
+      <td class="duration">10.690</td>
+      <td>7</td>
     </tr>
     <tr>
       <td></td>
-      <td>96.23%</td>
-      <td>1.89%</td>
-      <td>1.89%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>88.89%</td>
-      <td>11.11%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>66.67%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>
